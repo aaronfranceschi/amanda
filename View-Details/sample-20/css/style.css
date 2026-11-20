@@ -16,9 +16,9 @@ body {
     height: 100%;
     position: fixed;
     left: 0;
-    background-color: #f2e96d;
+    background-color: #eef2ff;
     z-index: 11;
-    border-right: 1px solid #f2e96d;
+    border-right: 1px solid #eef2ff;
 }
 .executeart-panel-title {
     background-color: #4a494a;
@@ -89,7 +89,7 @@ body {
     display: block;
     font-size: 15px;
     text-decoration: none;
-    color: #ec842d;
+    color: #1d4ed8;
     text-transform: uppercase;
 }
 
@@ -140,7 +140,7 @@ ul.screenshots-list li {
     justify-content: center;
 }
 ul.screenshots-list li a {
-    background-color: #ec842d;
+    background-color: #1d4ed8;
     border-radius: 6px;
     color: #fff !important;
     display: block;
@@ -294,7 +294,7 @@ ul.screenshots-list li a:hover, ul.screenshots-list li a.selected {
     opacity: 0.9;
 }
 .ps-container.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y {
-    background-color: #ec842d;
+    background-color: #1d4ed8;
 }
 .ps-container > .ps-scrollbar-y-rail {
     position: absolute;
@@ -309,8 +309,8 @@ ul.screenshots-list li a:hover, ul.screenshots-list li a.selected {
 }
 .ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
     position: absolute;
-    background-color: #ec842d;
-    background-color: rgba(236, 132, 45, 0.9);
+    background-color: #1d4ed8;
+    background-color: rgba(29, 78, 216, 0.9);
     border-radius: 4px;
     -webkit-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
     transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
@@ -326,7 +326,7 @@ ul.screenshots-list li a:hover, ul.screenshots-list li a.selected {
     opacity: 1;
 }
 .ps-container:hover.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y {
-    background-color: #ec842d;
+    background-color: #1d4ed8;
 }
 .ps-container:hover > .ps-scrollbar-y-rail {
     opacity: 1;
@@ -336,7 +336,7 @@ ul.screenshots-list li a:hover, ul.screenshots-list li a.selected {
     opacity: 1;
 }
 .ps-container:hover > .ps-scrollbar-y-rail:hover > .ps-scrollbar-y {
-    background-color: #ec842d;
+    background-color: #1d4ed8;
 }
 noscript {
     text-align: center;
@@ -467,7 +467,7 @@ ul.screenshots-list li {
     display: block;
 }
 
-a.executeart-btn-1{font-family: 'Montserrat', sans-serif; padding:10px 10px; background:#ec842d; color:#12151d; font-size:15px; font-weight:600; text-decoration:none; border-radius:5px; margin-right:20px;}
+a.executeart-btn-1{font-family: 'Montserrat', sans-serif; padding:10px 10px; background:#1d4ed8; color:#12151d; font-size:15px; font-weight:600; text-decoration:none; border-radius:5px; margin-right:20px;}
 a.executeart-btn-2{font-family: 'Montserrat', sans-serif; padding:10px 10px; background:#ffffff; color:#000; font-size:15px; font-weight:600; text-decoration:none; border-radius:5px;}
 
 .content-area{ padding:0px 30px 0px 0px;}

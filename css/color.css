@@ -58,7 +58,7 @@ body.color-green #eshop .eshop-sidebar .eshop-widget .checkbox input[type=checkb
 body.color-green .jumbotron-event .event-info h2,
 body.color-green #event-speakers .speaker .speaker-body h3,
 body.color-green #schedule .schedule-single-info i {
-	color:#f7913b;
+	color:#1d4ed8;
 }
 
 body.color-green .btn-primary,
@@ -106,7 +106,7 @@ body.color-green .comingsoon .brands li a,
 body.color-green #profile-single .profile-body .profile-contacts li span,
 body.color-green #eshop .eshop-sidebar .eshop-widget .ui-slider .ui-slider-range,
 body.color-green .event-ticket.highlighted {
-    background-color: #f7913b;
+    background-color: #1d4ed8;
 }
 
 body.color-green .popover,
@@ -125,13 +125,13 @@ body.color-green #services.services2 .service i,
 body.color-green #services.services3 .service i,
 
 body.color-green #eshop .eshop-sidebar .eshop-widget .checkbox input[type=checkbox]:checked + label:before  {
-	border-color:#f7913b;
+	border-color:#1d4ed8;
 }
 
-body.color-green .popover.left > .arrow {border-left-color: #f7913b;}
-body.color-green .popover.right > .arrow {border-right-color: #f7913b;}
-body.color-green .popover.top > .arrow {border-top-color: #f7913b;}
-body.color-green .popover.bottom > .arrow {border-bottom-color: #f7913b;}
+body.color-green .popover.left > .arrow {border-left-color: #1d4ed8;}
+body.color-green .popover.right > .arrow {border-right-color: #1d4ed8;}
+body.color-green .popover.top > .arrow {border-top-color: #1d4ed8;}
+body.color-green .popover.bottom > .arrow {border-bottom-color: #1d4ed8;}
 
 /* TRANSPARENT */
 
@@ -160,7 +160,7 @@ body.color-green #section-blog-posts,
 body.color-green #section-testimonials,
 body.color-green #section-statistics,
 body.color-green .jumbotron1 {
-/*background:url(../image/drop_arrow.png) #f7913b top center no-repeat;*/
+/*background:url(../image/drop_arrow.png) #1d4ed8 top center no-repeat;*/
 background:#f0f0f0
 	
 }
@@ -170,11 +170,11 @@ background:#f0f0f0
 	body.color-green .navbar-default .navbar-toggle:focus,
 	body.color-green .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 	body.color-green .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-		color:#f7913b;
+		color:#1d4ed8;
 	}
 	
 	body.color-green .navbar-default .navbar-collapse {
-		border-color:#f7913b;
+		border-color:#1d4ed8;
 	}
 }
 
@@ -182,7 +182,7 @@ background:#f0f0f0
 
 body.color-green a:hover,
 body.color-green a:focus {
-	color:#f7913b;
+	color:#1d4ed8;
 }
 
 body.color-green .btn-primary:hover,
