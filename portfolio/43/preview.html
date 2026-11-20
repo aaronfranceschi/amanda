@@ -1,0 +1,530 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<title>Newpath vr</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet" />
+<script language="javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+    
+    //Disable F12 Key
+    $(document).keydown(function(event){
+    if(event.keyCode==123){
+        return false;
+    }
+        else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+             return false;
+    }
+    });
+
+    $(document).on("contextmenu",function(e){        
+       e.preventDefault();
+    });
+    
+    //Disable print Key
+    $(window).keyup(function(e){
+      if(e.keyCode == 44){
+        $("body").hide();
+      }
+    });
+    
+});
+</script>
+<style type="text/css">
+html {
+    width: 100%
+}
+.executeart ::-moz-selection {
+background:#cdcdcd;
+color:#555
+}
+.executeart ::selection {
+    background: #cdcdcd;
+    color: #555
+}
+.executeart body {
+    background-color: #cdcdcd;
+    margin: 0;
+    padding: 0
+}
+.executeart .ExternalClass, .executeart .ReadMsgBody {
+    width: 100%;
+    background-color: #cdcdcd
+}
+.executeart a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal
+}
+.executeart a:hover {
+    color: #414141;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal
+}
+.executeart div, .executeart p {
+    margin: 0!important
+}
+.executeart ul {
+    margin-top: 0!important;
+    margin-bottom: 0!important
+}
+.executeart table {
+    border-collapse: collapse
+}
+
+@media only screen and (max-width:640px) {
+.executeart table table, .executeart td[class=full_width] {
+    width: 100%!important
+}
+.executeart table[class=table_scale], .executeart td[class=td_scale] {
+    width: 440px!important;
+    margin: 0 auto!important
+}
+.executeart img[class=img_scale] {
+    width: 100%!important;
+    height: auto!important
+}
+.executeart img[class=divider] {
+    width: 440px!important;
+    height: 22px!important
+}
+.executeart table[class=spacer], .executeart td[class=spacer] {
+    display: none!important
+}
+.executeart td[class=center] {
+    text-align: center!important
+}
+.executeart table[class=full] {
+    width: 400px!important;
+    margin-left: 20px!important;
+    margin-right: 20px!important
+}
+}
+
+@media only screen and (max-width:479px) {
+.executeart table table, .executeart td[class=full_width] {
+    width: 100%!important
+}
+.executeart table[class=table_scale], .executeart td[class=td_scale] {
+    width: 280px!important;
+    margin: 0 auto!important
+}
+.executeart img[class=img_scale] {
+    width: 100%!important;
+    height: auto!important
+}
+.executeart img[class=divider] {
+    width: 280px!important;
+    height: 14px!important
+}
+.executeart table[class=spacer], .executeart td[class=spacer] {
+    display: none!important
+}
+.executeart td[class=center] {
+    text-align: center!important
+}
+.executeart table[class=full] {
+    width: 240px!important;
+    margin-left: 20px!important;
+    margin-right: 20px!important
+}
+}
+.executeart td.footer a {
+    color: #787879;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal
+}
+.executeart td.footer a:hover {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal
+}
+</style>
+
+<!--[if mso 7]>
+    <style type="text/css">
+    td span {
+	font-family: Arial, sans-serif;
+    font-weight:normal!important;
+    }
+     td a {
+	font-family: Arial, sans-serif;
+    font-weight:normal!important;
+    }
+
+    </style>
+<![endif]-->
+
+<!--[if mso 8]>
+    <style type="text/css">
+    td span {
+	font-family: Arial, sans-serif;
+    font-weight:normal!important;
+    }
+     td a {
+	font-family: Arial, sans-serif;
+    font-weight:normal!important;
+    }
+
+    </style>
+<![endif]-->
+
+
+<!--[if mso 9]>
+    <style type="text/css">
+    td span {
+	font-family: Arial, sans-serif;
+    font-weight:normal!important;
+    }
+     td a {
+	font-family: Arial, sans-serif;
+    font-weight:normal!important;
+    }
+
+    </style>
+<![endif]-->
+
+<!--[if mso 13]>
+    <style type="text/css">
+    td span {
+	font-family: Arial, sans-serif;
+    font-weight:normal!important;
+    }
+     td a {
+	font-family: Arial, sans-serif;
+    font-weight:normal!important;
+    }
+
+    </style>
+<![endif]-->
+
+
+<!--[if lt mso 14]>
+    <style type="text/css">
+    td span {
+	font-family: Arial, sans-serif;
+    font-weight:normal!important;
+    }
+    
+    td a {
+	font-family: Arial, sans-serif;
+    font-weight:normal!important;
+    }
+    </style>
+<![endif]-->
+
+<!--[if mso 15]>
+    <style type="text/css">
+    td span {
+	font-family: Arial, sans-serif;
+    font-weight:normal!important;
+    }
+    
+     td a {
+	font-family: Arial, sans-serif;
+    font-weight:normal!important;
+    }
+    </style>
+<![endif]-->
+
+
+</head>
+<body class="executeart" style="margin:0!important; padding:0!important;">
+<!-- START OF HEADER-->
+<table width="100%" align="center" bgcolor="#cdcdcd" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td valign="top" width="100%">
+            <table align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td width="100%">
+                        <table bgcolor="#fd0cb9" class="table_scale" width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="100%" height="20" style="line-height:0;">&nbsp;</td>
+                            </tr>
+                        </table>
+                        <table class="table_scale" width="600" bgcolor="#fd0cb9" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="100%">
+                                    <table width="600" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td class="spacer" width="30"></td>
+                                            <td width="540">
+                                                <table class="full" align="left" width="255" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt;">
+                                                    <tr>
+                                                        <td class="center" align="left" style="margin: 0; font-size:13px ; color:#aaaaaa; font-family: 'Raleway', sans-serif; line-height: 23px;"><span> <a href="#" style="color:#3498db;"> <img src="images/logo.png" alt="logo" width="239" height="50" border="0" style="display: inline-block;" mc:edit="logo-changes" /> </a></span></td>
+                                                    </tr>
+                                                </table>
+                                                <table width="10" align="left" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                    <tr>
+                                                        <td width="100%" height="20"></td>
+                                                    </tr>
+                                                </table>
+                                                <table class="full" align="right" width="255" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                    <tr>
+                                                        <td height="10" style="mso-line-height-rule: exactly;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="center" align="right" style="margin: 0; font-weight:bold; font-size:30px ; color:#ffffff; font-family: 'Raleway', sans-serif; mso-line-height-rule: exactly;" mc:edit="news-heading"><span> News </span></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td class="spacer" width="30"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table bgcolor="#fd0cb9" class="table_scale" width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="100%" height="20" style="line-height:0;">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table width="100%" align="center" bgcolor="#cdcdcd" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td valign="top" width="100%">
+            <table align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td width="100%">
+                        <table class="table_scale" width="600" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="100%">
+                                    <table align="center" width="600" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td align="center" style="margin: 0; font-size:13px ; color:#aaaaaa; font-family: 'Raleway', sans-serif; line-height: 0;"><span> <img class="divider" src="images/header-divider.png" alt="header divider" width="600" height="30" border="0" style="display: inline-block;" /> </span></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- End HEADER-->
+
+<table width="100%" align="center" bgcolor="#cdcdcd" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td valign="top" width="100%">
+            <table align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td width="100%">
+                        <table bgcolor="#ffffff" class="table_scale" width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="100%" height="15">&nbsp;</td>
+                            </tr>
+                        </table>
+                        <table class="table_scale" width="600" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="100%">
+                                    <table width="600" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td class="spacer" width="22"></td>
+                                            <td width="556">
+                                                <table class="full" align="left" width="556" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                    <tr>
+                                                        <td align="left" style="padding-bottom: 10px; font-weight:bold; font-family: 'Raleway', sans-serif; color:#fd0cb9; font-size:24px; line-height:28px; mso-line-height-rule: exactly;" mc:edit="message-heading"><span> We want YOU! August 11th!</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td align="left" style="margin: 0; font-weight:normal; font-size:15px ; color:#656565; font-family: 'Raleway', sans-serif; line-height: 23px; mso-line-height-rule: exactly;"  mc:edit="message-text"><span> Come and demo your app or technology at the Consciousness in VR event next Friday, August 11th, from 7-10 pm at the Upload Collective in San Francisco CA at no charge. We are waving the $100 demo table feet It's not too late, reply and get connected to demo next week. <br />
+                                                        <br />
+                                                        'Conscious technologies are key to the future of wellness and getting these into the hands of as many people as possible so that they can improve themselves and lead better lives, that's the goal.' <br />
+                                                        <br />
+                                                        <strong>— Lisa Padilla, CEO, NewPathVR </strong> </span>
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="22" style=" mso-line-height-rule: exactly;">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td align="center" valign="top" style="padding-top: 20px;">
+                                                        <table border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#3498db" style="margin: 0;">
+                                                            <tr>
+                                                                <td align="center" valign="middle" bgcolor="#fd0cb9" style="text-transform: normal; padding: 15px 15px; font-size:24px; line-height: 18px; font-family: 'Raleway', sans-serif; color:#ffffff; margin: 0 !important;"  mc:edit="message-link"><a href="#" style="font-weight:normal; font-style: normal; color:#ffffff;"> Reply to learn More</a></td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td class="spacer" width="22"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table bgcolor="#ffffff" class="table_scale" width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="100%" height="40" style="line-height:0;">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table width="100%" align="center" bgcolor="#cdcdcd" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td valign="top" width="100%">
+            <table align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td width="100%">
+                        <table class="table_scale" width="600" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="100%">
+                                    <table align="center" width="600" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td align="center" style="margin: 0; font-size:13px ; color:#aaaaaa; font-family: 'Raleway', sans-serif; line-height: 0;"><span> <img class="divider" src="images/block-divider-content.png" alt="divider image" width="600" height="30" border="0" style="display: inline-block;" /> </span></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table width="100%" align="center" bgcolor="#cdcdcd" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td valign="top" width="100%">
+            <table align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td width="100%">
+                        <table bgcolor="#fd0cb9" class="table_scale" width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="100%" height="15" style="line-height:0;">&nbsp;</td>
+                            </tr>
+                        </table>
+                        <table class="table_scale" width="600" bgcolor="#fd0cb9" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="100%">
+                                    <table width="600" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td class="spacer" width="22"></td>
+                                            <td width="556">
+                                                <table class="full" align="left" width="556" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                    <tr>
+                                                        <td style="height:20px; mso-line-height-rule: exactly;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="center" style="border:6px solid #ffffff; border-width:6px 6px 6px 6px;"><img class="img_scale" src="images/editiors-pic.jpg" alt="Editors Choice 2017" title="Editors Choice 2017" width="550" height="309" border="0" style="display: inline-block;" mc:edit="editors-picture"/></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="height:20px; mso-line-height-rule: exactly;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td bgcolor="#fd0cb9" mc:edit="editors-text" class="center" align="left" style="margin: 0; font-weight:normal; font-size:15px ; color:#ffffff; font-family: 'Raleway', sans-serif; line-height: 23px;mso-line-height-rule: exactly; background:#fd0cb9">
+                                                            <span>
+                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada, enim nec suscipit tempus, neque orci scelerisque est, et iaculis nunc dolor sit amet sem. Ut quam orci, pellentesque vitae nunc ultrices, finibus rutrum tortor
+                                                                <br /><br />
+                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada, enim nec suscipit tempus, neque orci scelerisque est, et iaculis nunc dolor sit amet sem. Ut quam orci, pellentesque vitae nunc ultrices, finibus rutrum tortor
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" valign="top" style="padding-top: 20px;">
+                                                            <table border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#3498db" style="margin: 0;">
+                                                                <tr>
+                                                                    <td align="center" valign="middle" bgcolor="#ffffff" style="text-transform: normal; padding: 15px 15px; font-size:24px; line-height: 18px; font-family: 'Raleway', sans-serif; color:#fd0cb9; margin: 0 !important;" mc:edit="more-link" ><a href="#" style="font-weight:normal; font-style: normal; color:#fd0cb9;"> More Details</a></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td class="spacer" width="22 mso-line-height-rule: exactly;"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table bgcolor="#fd0cb9" class="table_scale" width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="100%" height="40" style="line-height:0;">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- FOOTER BLOCK-->
+<table width="100%" align="center" bgcolor="#cdcdcd" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td valign="top" width="100%">
+            <table align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td width="100%">
+                        <table class="table_scale" width="600" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="100%">
+                                    <table align="center" width="600" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td align="center" style="margin: 0; font-size:13px ; color:#aaaaaa; font-family: 'Raleway', sans-serif; line-height: 0;"><img class="divider" src="images/footer-divider-block.png" alt="footer divider" width="600" height="30" border="0" style="display: inline-block;" /></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table data-templateapp="Footer Block" width="100%" align="center" bgcolor="#cdcdcd" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td valign="top" width="100%">
+            <table align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td width="100%">
+                        <table bgcolor="#170010" class="table_scale" width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="100%" height="40" style="line-height:0;">&nbsp;</td>
+                            </tr>
+                        </table>
+                        <table bgcolor="#170010" class="table_scale" width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="100%" style="color:#ffffff; text-align:center; font-weight:normal; font-size:12px;  font-family: 'Raleway', sans-serif;" mc:edit="unsubscribe-text"> <a href="*|UNSUB|*" style="text-decoration: none; color:#ffffff;">Unsubscribe from this list</a>  | &copy;2017 NewPathVR™</td>
+                            </tr>
+                        </table>
+                        <table bgcolor="#170010" class="table_scale" width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="100%" height="40" style="line-height:0;">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- END OF FOOTER BLOCK-->
+</body>
+</html>

@@ -1,0 +1,782 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
+<meta content="telephone=no" name="format-detection">
+<title></title>
+<style>
+@font-face {
+font-family: 'Proxima Nova Lt';
+src: url('fonts/ProximaNova-Semibold.eot');
+src: url('fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova-Semibold.woff2') format('woff2'),
+    url('fonts/ProximaNova-Semibold.woff') format('woff'),
+    url('fonts/ProximaNova-Semibold.ttf') format('truetype'),
+    url('fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+font-weight: 600;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Didot';
+src: url('fonts/Didot-HTF-M06-Medium.eot');
+src: url('fonts/Didot-HTF-M06-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Didot-HTF-M06-Medium.woff2') format('woff2'),
+    url('fonts/Didot-HTF-M06-Medium.woff') format('woff'),
+    url('fonts/Didot-HTF-M06-Medium.ttf') format('truetype'),
+    url('fonts/Didot-HTF-M06-Medium.svg#Didot-HTF-M06-Medium') format('svg');
+font-weight: 500;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Helvetica Neue LT Pro';
+src: url('fonts/HelveticaNeueLTPro-Lt.eot');
+src: url('fonts/HelveticaNeueLTPro-Lt.eot?#iefix') format('embedded-opentype'),
+    url('fonts/HelveticaNeueLTPro-Lt.woff2') format('woff2'),
+    url('fonts/HelveticaNeueLTPro-Lt.woff') format('woff'),
+    url('fonts/HelveticaNeueLTPro-Lt.ttf') format('truetype'),
+    url('fonts/HelveticaNeueLTPro-Lt.svg#HelveticaNeueLTPro-Lt') format('svg');
+font-weight: 300;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Helvetica Neue LT Std';
+src: url('fonts/HelveticaNeueLTStd-Md.eot');
+src: url('fonts/HelveticaNeueLTStd-Md.eot?#iefix') format('embedded-opentype'),
+    url('fonts/HelveticaNeueLTStd-Md.woff2') format('woff2'),
+    url('fonts/HelveticaNeueLTStd-Md.woff') format('woff'),
+    url('fonts/HelveticaNeueLTStd-Md.ttf') format('truetype'),
+    url('fonts/HelveticaNeueLTStd-Md.svg#HelveticaNeueLTStd-Md') format('svg');
+font-weight: 500;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Swiss 721 SWA';
+src: url('fonts/Helvetica.eot');
+src: url('fonts/Helvetica.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Helvetica.woff2') format('woff2'),
+    url('fonts/Helvetica.woff') format('woff'),
+    url('fonts/Helvetica.ttf') format('truetype'),
+    url('fonts/Helvetica.svg#Helvetica') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Chronicle Display';
+src: url('fonts/ChronicleDisplay-Light.eot');
+src: url('fonts/ChronicleDisplay-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ChronicleDisplay-Light.woff2') format('woff2'),
+    url('fonts/ChronicleDisplay-Light.woff') format('woff'),
+    url('fonts/ChronicleDisplay-Light.ttf') format('truetype'),
+    url('fonts/ChronicleDisplay-Light.svg#ChronicleDisplay-Light') format('svg');
+font-weight: 300;
+font-style: normal;
+}
+.ReadMsgBody{width:100%; background-color:#ffffff; }
+.ExternalClass{width:100%; background-color:#ffffff; }
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {line-height: 100%;}
+html {width: 100%; }
+body {-webkit-text-size-adjust: none; -ms-text-size-adjust: none; margin: 0; padding: 0; background:#ffffff}
+table {border-spacing: 0; border-collapse: collapse; }
+table td {border-collapse: collapse; }
+img {display: block!important; }
+a {text-decoration:none!important;}
+.tab-color a{text-decoration:none!important; color:#f6f6f6!important}
+
+.container{width:620px; background:#ffffff}
+.sub-container{width:556px;}
+.inner-sub-container{width:500px;}
+.banner-content{width:400px;}
+
+.full-width{ width:100% !important; text-align: center !important;}
+
+ /* Menu and Logo Area*/
+.menu-col-1{width:168px;}
+.menu-col-2{width:60px;}
+.menu-col-3{width:328px;}
+
+ /* product Area*/
+.product-col-1{width:230px;}
+.product-col-2{width:30px;}
+.product-col-3{width:296px;}
+
+.hottips-col-1{width:72px;}
+.hottips-col-2{width:134px;}
+.hottips-col-3{width:8px;}
+.hottips-col-4{width:200px;}
+.hottips-col-5{width:206px;}
+
+.footer-product-col-1{width:123px;}
+.footer-product-col-2{width:374px;}
+.footer-product-col-3{width:123px;}
+
+@media only screen and (max-width:580px){
+.container{max-width:620px!important; width:95%!important;}
+.sub-container{width:556px!important; width:100%!important;}
+.inner-sub-container{width:500px!important; width:100%!important;}
+.banner-content{width:400px!important; width:90%!important;}
+
+.full-width{ width:90% !important; text-align: center !important; }
+
+ /* Menu and Logo Area*/
+.menu-col-1{width:168px; display:block !important; width:100% !important;}
+.menu-col-2{width:60px; display:block !important; width:100% !important; height:20px!important;}
+.menu-col-3{width:328px; display:block !important; width:100% !important;}
+
+ /* product Area*/
+.product-col-1{width:230px; display:block !important; width:100% !important;}
+.product-col-2{width:30px; display:block !important; width:100% !important; height:20px!important;}
+.product-col-3{width:296px; display:block !important; width:100% !important;}
+
+.hottips-col-1{width:72px; display:block !important; width:100% !important;}
+.hottips-col-2{width:134px; display:block !important; width:100% !important;}
+.hottips-col-3{width:8px; display:block !important; width:100% !important; height:2px!important;}
+.hottips-col-4{width:200px; display:block !important; width:100% !important;}
+.hottips-col-5{width:206px; display:block !important; width:100% !important;}
+
+.footer-product-col-1{width:123px; display:block !important; width:100% !important;}
+.footer-product-col-2{width:374px; display:block !important; width:100% !important;}
+.footer-product-col-3{width:123px; display:block !important; width:100% !important;}
+
+/* Mobile Genaral CSS */
+.img-responsive{ width:100%; height:auto;}
+.responsive-image img{ width:100%!important; height:auto!important;}
+.tab-color a{text-decoration:none!important; color:#f6f6f6!important}
+.product-color a{text-decoration:none!important; color:#000000!important}
+.footer-link a{text-decoration:none!important; color:#cbcbcb!important}
+.hide-block{ display:none!important}
+.height10{ height:10px!important;}
+.height20{ height:20px!important;}
+.font26{ font-size:26px!important;}
+.font28{ font-size:26px!important; line-height:35px!important}
+}
+</style>
+</head>
+
+<body>
+<table cellpadding="0" cellspacing="0" border="0" align="center" class="container">
+    <tr>
+         <td class="height10" height="20" align="center" valign="top"></td>
+    </tr>
+    <tr>
+        <td valign="top" align="center" style="font-family: 'Helvetica Neue LT Pro', arial, sans-serif; font-weight:300; letter-spacing:1px; font-size:14px; font-weight:normal; color:#2a2a2a; text-align:center; text-transform:uppercase; line-height:24px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;">
+            spend $75 for free usa shipping!
+        </td>
+    </tr>
+    <tr>
+         <td class="height10" height="20" align="center" valign="top"></td>
+    </tr>
+    <tr>
+        <td valign="top" align="center" bgcolor="#000000">
+            <table cellpadding="0" cellspacing="0" border="0" align="center" class="sub-container">
+                <tr>
+                    <td class="height20" height="30" align="center" valign="top"></td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                            <tr>
+                                <td valign="top" align="center" class="menu-col-1">
+                                    <a href="#" target="_blank"><img src="images/logo.png" alt="" title=""></a>
+                                </td>
+                                <td valign="top" align="center" class="menu-col-2"></td>
+                                <td valign="top" align="center" class="menu-col-3">
+                                    <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                                        <tr>
+                                            <td valign="top" height="1" bgcolor="#6e6d6c" style="height:1px; background:#6e6d6c"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="height10" height="15" align="center" valign="top"></td>
+                                        </tr>
+                                         <tr>
+                                            <td valign="top" align="center">
+                                                <table cellpadding="0" cellspacing="0" border="0" align="center" class="full-width">
+                                                    <tr>
+                                                        <td valign="top" align="left" style="font-family: 'Proxima Nova Lt'; font-weight:600; font-style:normal; color:#f6f6f6; text-transform:uppercase; font-size:13px; font-weight:bold;" class="tab-color"><a href="#" target="_blank" style="text-decoration:none; color:#f6f6f6">SHOP ALL</a></td>
+                                                        <td valign="top" align="center"></td>
+                                                        <td valign="top" align="center" style="font-family: 'Proxima Nova Lt'; font-weight:600; font-style:normal; color:#f6f6f6; text-transform:uppercase; font-size:13px; font-weight:bold;" class="tab-color"><a href="#" target="_blank" style="text-decoration:none; color:#f6f6f6">Shop by Line</a></td>
+                                                        <td valign="top" align="center"></td>
+                                                        <td valign="top" align="right" style="font-family: 'Proxima Nova Lt'; font-weight:600; font-style:normal; color:#f6f6f6; text-transform:uppercase; font-size:13px; font-weight:bold;" class="tab-color"><a href="#" target="_blank" style="text-decoration:none; color:#f6f6f6">Shop by Need</a></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="height10" height="15" align="center" valign="top"></td>
+                                        </tr>
+                                         <tr>
+                                            <td valign="top" height="1" bgcolor="#6e6d6c" style="height:1px; background:#6e6d6c"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="height20" height="30" align="center" valign="top"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+         <td class="height20" height="38" align="center" valign="top"></td>
+    </tr>
+    <tr>
+        <td valign="top" align="center" class="responsive-image">
+            <a href="#" target="_blank"><img src="images/banner.jpg" alt="" title=""></a>
+        </td>
+    </tr>
+    <tr>
+        <td class="height20" height="60" align="center" valign="top"></td>
+    </tr>
+    <tr>
+        <td valign="top" align="center">
+            <table cellpadding="0" cellspacing="0" border="0" align="center" class="inner-sub-container">
+                <tr>
+                    <td valign="top" align="center" style="font-family: 'Didot', arial, sans-serif; font-weight:500; text-align:center; font-size:30px; color:#000000; text-align:center; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;" class="font26">
+                        Lorem ipsum dolor sit amet 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="height20" height="26" align="center" valign="top"></td>
+                </tr>
+                <tr>
+                    <td valign="top" align="center" style="font-family: 'Helvetica Neue LT Pro', arial, sans-serif; font-weight:300; color:#707070; font-size:18px; line-height:28px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus fringilla arcu, sit amet sodales enim fringilla dapibus. Maecenas tristique, quam ut gravida tempu.
+                    </td>
+                </tr>
+                <tr>
+                     <td class="height20" height="38" align="center" valign="top"></td>
+                </tr>
+                <tr>
+                    <td valign="top" align="center">
+                        <table width="216px" cellpadding="0" cellspacing="0" bgcolor="#000000" style=" background:#000000;">
+                            <tr>
+                                <td valign="top" align="center" height="18"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="center" style="font-family: 'Helvetica Neue LT Std', arial, sans-serif; text-align:center; font-weight:500; font-size:14px; color:#ffffff; text-transform:uppercase; letter-spacing:1px;">
+                                    <a href="#" target="_blank" style="text-decoration:none; color:#ffffff">Shop the product</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="center" height="18"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="height20" height="65" align="center" valign="top"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top" align="center" bgcolor="#f6f6f6" style="background:#f6f6f6">
+            <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                <tr>
+                    <td class="height20" height="50" align="center" valign="top"></td>
+                </tr>
+                
+                <tr>
+                    <td valign="top" align="center">
+                        <table cellpadding="0" cellspacing="0" border="0" align="center" class="sub-container">
+                            <tr>
+                                <td align="center" valign="top" style="font-family: 'Helvetica Neue LT Std', arial, sans-serif; font-weight: 500; text-align:center; text-transform:uppercase; color:#000000; font-size:18px; text-transform:uppercase; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;" >
+                                    SHOP OUR ULTIMATE MOISTURE COLLECTION
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="height20" height="30" align="center" valign="top"></td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top" height="1" bgcolor="#dadada" style="height:1px; background:#dadada;"></td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                                        <tr>
+                                            <td valign="top" align="center" class="product-col-1">
+                                                <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                                                    <tr>
+                                                        <td class="height20" height="45" align="center" valign="top"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center">
+                                                            <a href="#" target="_blank"><img src="images/product-1.jpg" alt="" title=""></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center" style="font-family: 'Swiss 721 SWA', arial, sans-serif; font-weight:normal; color:#000000; font-size:15px; text-transform:uppercase; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;">
+                                                            2OZ THIRST QUENCHER CONDITIONER
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="height10" height="10" align="center" valign="top"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center" style="font-family: 'Swiss 721 SWA', arial, sans-serif; font-weight:normal; color:#000000; font-size:14px; text-transform:uppercase; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;">
+                                                            $13.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="height20" height="25" align="center" valign="top"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center">
+                                                            <table width="124px" cellpadding="0" cellspacing="0" style="border:1px solid #000000;">
+                                                    <tr>
+                                                        <td valign="top" align="center" height="10"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center" style="font-family: 'Swiss 721 SWA', arial, sans-serif; font-weight:normal; color:#000000; font-size:14px; text-transform:uppercase; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;" class="product-color">
+                                                            <a href="#" target="_blank" style="text-decoration:none; color:#000000">SHOP NOW</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center" height="10"></td>
+                                                    </tr>
+                                                </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="height20" height="25" align="center" valign="top"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td valign="top" align="center" class="product-col-2"></td>
+                                            <td valign="top" align="center" class="product-col-3">
+                                                <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                                                    <tr>
+                                                        <td class="height20" height="45" align="center" valign="top"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center">
+                                                            <a href="#" target="_blank"><img src="images/product-2.jpg" alt="" title=""></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center" style="font-family: 'Swiss 721 SWA', arial, sans-serif; font-weight:normal; color:#000000; font-size:15px; text-transform:uppercase; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;">
+                                                            ADVANCED VOLUME CONDITIONER WITH EXPANSION TECHNOLOGY 2OZ
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="height10" height="10" align="center" valign="top"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center" style="font-family: 'Swiss 721 SWA', arial, sans-serif; font-weight:normal; color:#000000; font-size:14px; text-transform:uppercase; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;">
+                                                            $23.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="height20" height="25" align="center" valign="top"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center">
+                                                            <table width="124px" cellpadding="0" cellspacing="0" style="border:1px solid #000000;">
+                                                    <tr>
+                                                        <td valign="top" align="center" height="10"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center" style="font-family: 'Swiss 721 SWA', arial, sans-serif; font-weight:normal; color:#000000; font-size:14px; text-transform:uppercase; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;" class="product-color">
+                                                            <a href="#" target="_blank" style="text-decoration:none; color:#000000">SHOP NOW</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center" height="10"></td>
+                                                    </tr>
+                                                </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="height20" height="25" align="center" valign="top"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                                        <tr>
+                                            <td valign="top" align="center" class="product-col-1">
+                                                <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                                                    <tr>
+                                                        <td class="height20" height="45" align="center" valign="top"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center">
+                                                            <a href="#" target="_blank"><img src="images/product-3.jpg" alt="" title=""></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center" style="font-family: 'Swiss 721 SWA', arial, sans-serif; font-weight:normal; color:#000000; font-size:15px; text-transform:uppercase; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;">
+                                                            8OZ MEGASIZE VELVET MESQUITE SERUM
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="height10" height="10" align="center" valign="top"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center" style="font-family: 'Swiss 721 SWA', arial, sans-serif; font-weight:normal; color:#000000; font-size:14px; text-transform:uppercase; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;">
+                                                            $78.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="height20" height="25" align="center" valign="top"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center">
+                                                            <table width="124px" cellpadding="0" cellspacing="0" style="border:1px solid #000000;">
+                                                    <tr>
+                                                        <td valign="top" align="center" height="10"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center" style="font-family: 'Swiss 721 SWA', arial, sans-serif; font-weight:normal; color:#000000; font-size:14px; text-transform:uppercase; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;" class="product-color">
+                                                            <a href="#" target="_blank" style="text-decoration:none; color:#000000">SHOP NOW</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center" height="10"></td>
+                                                    </tr>
+                                                </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="height20" height="25" align="center" valign="top"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td valign="top" align="center" class="product-col-2"></td>
+                                            <td valign="top" align="center" class="product-col-3">
+                                                <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                                                    <tr>
+                                                        <td class="height20" height="45" align="center" valign="top"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center">
+                                                            <a href="#" target="_blank"><img src="images/product-4.jpg" alt="" title=""></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center" style="font-family: 'Swiss 721 SWA', arial, sans-serif; font-weight:normal; color:#000000; font-size:15px; text-transform:uppercase; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;">
+                                                            FLOCKER MOISTURIZING<br> CONDITIONER 8OZ.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="height10" height="10" align="center" valign="top"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center" style="font-family: 'Swiss 721 SWA', arial, sans-serif; font-weight:normal; color:#000000; font-size:14px; text-transform:uppercase; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;">
+                                                            $24.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="height20" height="25" align="center" valign="top"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center">
+                                                            <table width="124px" cellpadding="0" cellspacing="0" style="border:1px solid #000000;">
+                                                    <tr>
+                                                        <td valign="top" align="center" height="10"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center" style="font-family: 'Swiss 721 SWA', arial, sans-serif; font-weight:normal; color:#000000; font-size:14px; text-transform:uppercase; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;" class="product-color">
+                                                            <a href="#" target="_blank" style="text-decoration:none; color:#000000">SHOP NOW</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" align="center" height="10"></td>
+                                                    </tr>
+                                                </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="height20" height="25" align="center" valign="top"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="height20" height="50" align="center" valign="top"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="height20" height="45" align="center" valign="top"></td>
+    </tr>
+    <tr>
+        <td valign="top" height="445" align="center" style="background:url(images/background-image.jpg); background-position:center; background-repeat:no-repeat; height:445px; background-size:cover;">
+            <!--[if gte mso 9]>
+            <v:image xmlns:v="urn:schemas-microsoft-com:vml" id="theImage" style='behavior: url(#default#VML); display:inline-block; position:absolute; height:445px; width:620px; top:0; left:0; border:0; z-index:1;' src="images/background-image.jpg"/>
+            <v:shape xmlns:v="urn:schemas-microsoft-com:vml" id="theText" style='behavior: url(#default#VML); display:inline-block; position:absolute; height:445px; width:620px; top:-5; left:-10; border:0; z-index:2;'>
+            <![endif]-->
+            <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                <tr>
+                    <td valign="top" align="center" height="32" class="height10"></td>
+                </tr>
+                <tr>
+                    <td valign="top" align="center">
+                        <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                            <tr>
+                                <td valign="top" align="center" class="hottips-col-1"></td>
+                                <td valign="top" align="center" class="hottips-col-2"><img src="images/master.png"></td>
+                                <td valign="top" align="center" class="hottips-col-3"></td>
+                                <td valign="top" align="center" class="hottips-col-4">
+                                    <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                                        <tr>
+                                            <td valign="top" align="center" height="50" class="height10"></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" align="center" style="font-family: 'Chronicle Display', arial, sans-serif; font-size:47px; color:#ffffff; font-weight:300;">
+                                                HOT TIP
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" align="center" height="35" class="height10"></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" align="center">
+                                                <table cellpadding="0" cellspacing="0" border="0" align="center" width="114" style="width:114px;">
+                                                    <tr>
+                                                        <td valign="top" align="center" height="2" bgcolor="#2b2b2b" style="height:2px; background:#2b2b2b"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td valign="top" align="center" class="hottips-col-5"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" align="center" height="50" class="height10"></td>
+                </tr>
+                <tr>
+                    <td valign="top" align="center">
+                       <table cellpadding="0" cellspacing="0" border="0" align="center" class="banner-content">
+                            
+                            <tr>
+                                <td valign="top" align="center" style="font-family: 'Didot',arial, sans-serif; font-weight:500; text-align:center; font-size:30px; color:#ffffff; text-align:center; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;" >
+                                    Lorem ipsum dolor.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="center" height="32" class="height10"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="center" style="font-family: 'Helvetica Neue LT Pro', arial, sans-serif; font-weight:300; color:#ffffff; font-size:18px; line-height:28px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus fringilla arcu, sit amet sodales enim fringilla dapibus. Maecenas tristique, quam ut gravida tempu.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="center" height="50" class="height10"></td>
+                            </tr>
+                       </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if gte mso 9]>
+            </v:shape>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td valign="top" align="center">
+            <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                <tr>
+                    <td valign="top" align="center" class="footer-product-col-1">
+                        <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%" class="hide-block">
+                            <tr>
+                                <td class="height20" height="182" bgcolor="020202" align="center" valign="top"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td valign="top" align="center" class="footer-product-col-2" bgcolor="#f6f6f6">
+                        <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                            <tr>
+                                <td class="height20" height="25" align="center" valign="top"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="center">
+                                    <a href="#" target="_blank"><img src="images/product-3.jpg" alt="" title=""></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="center" style="font-family: 'Swiss 721 SWA', arial, sans-serif; font-weight:normal; color:#000000; font-size:15px; text-transform:uppercase; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;">
+                                    8OZ MEGASIZE VELVET<BR>MESQUITE SERUM
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="height10" height="10" align="center" valign="top"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="center" style="font-family: 'Swiss 721 SWA', arial, sans-serif; font-weight:normal; color:#000000; font-size:14px; text-transform:uppercase; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;">
+                                    $78.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="height20" height="25" align="center" valign="top"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="center">
+                                    <table width="124px" cellpadding="0" cellspacing="0" style="border:1px solid #000000;">
+                                        <tr>
+                                            <td valign="top" align="center" height="10"></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" align="center" style="font-family: 'Swiss 721 SWA', arial, sans-serif; font-weight:normal; color:#000000; font-size:14px; text-transform:uppercase; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;" class="product-color">
+                                                <a href="#" target="_blank" style="text-decoration:none; color:#000000">SHOP NOW</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" align="center" height="10"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="height20" height="25" align="center" valign="top"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td valign="top" align="center" class="footer-product-col-3">
+                        <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%" class="hide-block">
+                            <tr>
+                                <td class="height20" height="182" bgcolor="020202" align="center" valign="top"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="height20" height="60" align="center" valign="top"></td>
+    </tr>
+    <tr>
+        <td valign="top" align="center" bgcolor="#f6f6f6">
+            <table cellpadding="0" cellspacing="0" border="0" align="center" class="inner-sub-container">
+                <tr>
+                    <td class="height20" height="50" align="center" valign="top"></td>
+                </tr>
+                <tr>
+                    <td valign="top" align="center" height="25">
+                        <img src="images/quote.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="height20" height="40" align="center" valign="top"></td>
+                </tr>
+                <tr>
+                    <td valign="top" align="center" style="font-family: 'Didot', arial, sans-serif; font-weight:500; text-align:center; font-size:35px; color:#2a2a2a; line-height:50px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%; text-align:center; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;" class="font28">
+                        Love all Nick's products, but his Plump 'N Thick line is amazing for dry, exhausted hair.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="height20" height="24" align="center" valign="top"></td>
+                </tr>
+                <tr>
+                    <td valign="top" align="center" style="font-family: 'Helvetica Neue LT Pro', arial, sans-serif; font-weight:300; color:#252525; font-size:17px; line-height:28px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus fringilla arcu, sit amet sodales enim fringilla dapibus.
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" align="center" style="font-family: 'Helvetica Neue LT Pro', arial, sans-serif; font-weight:300; color:#252525; font-size:17px; line-height:28px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%;">
+                        — Jan
+                    </td>
+                </tr>
+                <tr>
+                    <td class="height20" height="60" align="center" valign="top"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="height20" height="60" align="center" valign="top"></td>
+    </tr>
+    <tr>
+        <td valign="top" align="center" height="243" bgcolor="#000000" style="background:url(images/footer-bg.png); background-position:center; background-repeat:no-repeat; height:243px; background-size:cover;">
+        <!--[if gte mso 9]>
+        <v:image xmlns:v="urn:schemas-microsoft-com:vml" id="theImage" style='behavior: url(#default#VML); display:inline-block; position:absolute; height:243px; width:620px; top:0; left:0; border:0; z-index:1;' src="images/footer-bg.png"/>
+        <v:shape xmlns:v="urn:schemas-microsoft-com:vml" id="theText" style='behavior: url(#default#VML); display:inline-block; position:absolute; height:243px; width:620px; top:-5; left:-10; border:0; z-index:2;'>
+        <![endif]-->
+        <table cellpadding="0" cellspacing="0" border="0" align="center" class="full-width">
+            <tr>
+                <td valign="top" align="center" height="44" class="height20"></td>
+            </tr>
+            <tr>
+                <td valign="top" align="center">
+                    <table cellpadding="0" cellspacing="0" border="0" align="center" width="165" style="width:165px;">
+                        <tr>
+                            <td align="center" valign="top">
+                                <a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook" title="Facebook"></a>
+                            </td>
+                            <td align="center" valign="top"></td>
+                            <td align="center" valign="top">
+                                <a href="#" target="_blank"><img src="images/twitter.png" alt="Twitter " title="Twitter "></a>
+                            </td>
+                            <td align="center" valign="top"></td>
+                            <td align="center" valign="top">
+                                <a href="#" target="_blank"><img src="images/pinterest.png" alt="Pinterest" title="Pinterest"></a>
+                            </td>
+                            <td align="center" valign="top"></td>
+                            <td align="center" valign="top">
+                                <a href="#" target="_blank"><img src="images/instagram.png" alt="Instagram" title="Instagram"></a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" align="center" height="40" class="height10"></td>
+            </tr>
+            <tr>
+                <td valign="top" align="center" style="font-family: 'Helvetica Neue LT Pro', arial, sans-serif; font-weight:300; color:#cbcbcb; font-size:14px; line-height:28px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%; letter-spacing:1px;">
+                    9595 Wilshire Blvd., Ste. 601  •  Beverly Hills, CA 90212
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" align="center" height="10"></td>
+            </tr>
+            <tr>
+                <td valign="top" align="center" style="font-family: 'Helvetica Neue LT Pro', arial, sans-serif; font-weight:300; color:#cbcbcb; font-size:14px; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%; letter-spacing:1px;">
+                    You are receiving this email because you’re<br>a subscriber of Nick Chavez Beverly Hills
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" align="center" height="10"></td>
+            </tr>
+            <tr>
+                <td valign="top" align="center" style="font-family: 'Helvetica Neue LT Pro', arial, sans-serif; font-weight:300; color:#cbcbcb; font-size:14px; line-height:20px; mso-line-height-rule:exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:100%; letter-spacing:1px;" class="footer-link">
+                    <a href="#" target="_blank" style="color:#cbcbcb; text-decoration:underline!important;"> Manage subscription settings</a>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" align="center" height="44" class="height10"></td>
+            </tr>
+            
+        </table>
+        <!--[if gte mso 9]>
+        </v:shape>
+        <![endif]-->
+        </td>
+    </tr>
+</table>
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/responsive-scale.js"></script>
+</body>
+</html>

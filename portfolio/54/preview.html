@@ -1,0 +1,885 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns:v="urn:schemas-microsoft-com:vml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
+    <style type="text/css">
+    
+	    body{
+            width: 100%; 
+            background-color: #eeeeee; 
+            margin:0; 
+            padding:0; 
+            -webkit-font-smoothing: antialiased;
+            mso-margin-top-alt:0px; mso-margin-bottom-alt:0px; mso-padding-alt: 0px 0px 0px 0px;
+        }
+        
+        p,h1,h2,h3,h4{
+	        margin-top:0;
+			margin-bottom:0;
+			padding-top:0;
+			padding-bottom:0;
+        }
+        
+        span.preheader{display: none; font-size: 1px;}
+        
+        html{
+            width: 100%; 
+        }
+        
+        table{
+            font-size: 14px;
+            border: 0;
+        }
+		.action-btn{
+	        width: 30px;
+	        position: absolute;
+	        left: 10px;
+	        top: 35%;
+	        z-index: 2000;
+        }
+        .action-btn a{
+	        margin-bottom: 10px;
+        }
+        
+        #promail{
+	        list-style: none;
+	        margin: 0;
+	        padding: 0;
+        }
+        #promail li{
+	        position: relative;
+	        cursor: n-resize;
+        }
+               
+		.test{
+			width: 100%;
+			position: relative;
+		}
+		
+		.test .icon {
+			position: absolute;
+			top: 2px;
+			right: 2px;
+		}
+				
+		#promail .test .icon img{width: 35px !important; height: 27px !important;}
+		
+		 /* ----------- responsivity ----------- */
+        @media only screen and (max-width: 640px){
+			/*------ top header ------ */	
+            body[jarrad] .main-header{font-size: 22px !important;}
+            body[jarrad] .main-subheader{font-size: 18px !important;}
+            body[jarrad] .hide{display: none !important;}
+            body[jarrad] .show{display: block !important;}
+            
+            /*----- main image -------*/
+			body[jarrad] .main-image img{width: 440px !important; height: auto !important;}
+			 
+			/* ====== divider ====== */
+			body[jarrad] .divider img{width: 440px !important;}
+			body[jarrad] .table-divider img{width: 440px !important;}
+			
+			/*--------- banner ----------*/
+			body[jarrad] .banner img{width: 440px !important; height: auto !important;}
+			/*-------- container --------*/			
+			body[jarrad] .container590{width: 440px !important;}
+			body[jarrad] .container580{width: 400px !important;}
+			body[jarrad] .half-section{width: 220px !important;}
+			
+			/*-------- secions ----------*/
+			body[jarrad] .section-item{width: 440px !important;}
+            body[jarrad] .section-img img{width: 440px !important; height: auto !important;}        
+        }
+
+		@media only screen and (max-width: 479px){
+			/*------ top header ------ */
+			body[jarrad] .main-header{font-size: 17px !important; line-height: 30px !important;}
+			body[jarrad] .main-header div{line-height: 30px !important;} 
+			body[jarrad] .hide{display: none !important;}
+            body[jarrad] .show{display: block !important;}
+            
+            /*----- main image -------*/
+			body[jarrad] .main-image img{width: 280px !important; height: auto !important;}
+			 
+			/* ====== divider ====== */
+			body[jarrad] .divider img{width: 280px !important;}
+			body[jarrad] .table-divider img{width: 280px !important;}
+			
+			/*--------- banner ----------*/
+			body[jarrad] .banner img{width: 280px !important; height: auto !important;}
+			/*-------- container --------*/			
+			body[jarrad] .container590{width: 280px !important;}
+			body[jarrad] .container580{width: 260px !important;}
+			body[jarrad] .half-section{width: 280px !important;}
+			
+			/*-------- secions ----------*/
+			body[jarrad] .section-item{width: 280px !important;}
+            body[jarrad] .section-img img{width: 280px !important; height: auto !important;} 
+			body[jarrad] .footer-space{ margin-top:15px!important;} 
+		}
+		
+</style>
+<script language="javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+    
+    //Disable F12 Key
+    $(document).keydown(function(event){
+    if(event.keyCode==123){
+        return false;
+    }
+        else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+             return false;
+    }
+    });
+
+    $(document).on("contextmenu",function(e){        
+       e.preventDefault();
+    });
+    
+    //Disable print Key
+    $(window).keyup(function(e){
+      if(e.keyCode == 44){
+        $("body").hide();
+      }
+    });
+    
+});
+</script>
+
+</head>
+
+<body jarrad="fix" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="ffffff">
+        <tr>
+            <td>
+                <table border="0" align="center" width="590" cellpadding="0" cellspacing="0" class="container590">
+                
+                    <tr>
+                    	<td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td  mc:edit="main-header" style="font-size:14px; color:#283e4e; font-family: 'Open Sans', sans-serif; font-weight:400; text-align:center;">
+                        	<div  class="editable_text">AUSSIE PROPERTY GURU - PROPERTY INVESTMENT ADVICE | ENQUIRIES +65 8282 5702</div>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td mc:edit="edit82" align="right">
+                            <span>
+                                <a href="https://www.facebook.com/aussiepropertyguru/" target="_blank" style="color:#ededed; text-decoration: none; background: none;">
+                                <img src="images/facebook.png" alt="facebook" title="facebook" width="23" height="22" border="0" style="display: inline-block;" />
+                                </a>
+                                &nbsp;
+                                <a href="http://twitter.com/aussiepropguru" target="_blank" style="color:#ededed; text-decoration: none; background: none;">
+                                <img src="images/twitter.png" alt="twitter" title="twitter" width="23" height="22" border="0" style="display: inline-block;" />
+                                </a>
+                                &nbsp;
+                                <a href="https://plus.google.com/+Aussiepropertyguru" target="_blank" style="color:#ededed; text-decoration: none; background: none;">
+                                <img src="images/gplus.png" alt="Google+" title="Google+" width="23" height="22" border="0" style="display: inline-block;" />
+                                </a>
+                                &nbsp;
+                                <a href="https://www.linkedin.com/company/aussie-property-guru" target="_blank" style="color:#ededed; text-decoration: none; background: none;">
+                                <img src="images/linkedIn.png" alt="LinkedIn" title="LinkedIn " width="23" height="22" border="0" style="display: inline-block;" />
+                                </a>
+                                &nbsp;
+                                <a href="https://www.youtube.com/channel/UCAsh-Rlq3moTVUT3kX4LvXw" target="_blank" style="color:#ededed; text-decoration: none; background: none;">
+                                <img src="images/you-tube.png" alt="YouTube" title="YouTube" width="23" height="22" border="0" style="display: inline-block;" />
+                                </a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+        
+    </table>
+            
+    <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="eeeeee" class="body_color" mc:repeatable="promail" mc:variant="main section with features">
+        <tr>
+            <td style="background-image: url(images/banner_images.jpg); background-size: 100% 450px; background-position: top center; background-repeat: no-repeat;" background="images/banner_images.jpg" class="main-bg">
+                <table border="0" align="center" width="590" cellpadding="0" cellspacing="0" class="container590">
+                
+                    <tr>
+                    	<td height="110" style="font-size: 110px; line-height: 110px;" class="editable_img"><a href="http://aussiepropertyguru.com/" target="_blank"><img src="images/logo.jpg" editable="true" mc:edit="web-logo" style="max-width:171px; max-height:155px; display:block;" width="171" height="155" border="0" /></a></td>
+                   </tr>
+                   <tr>
+                   		<td height="30" style="font-size: 30px; line-height: 30px;">&nbsp;</td>
+                   </tr>
+                    
+                    <tr>
+                        <td align="center" mc:edit="main-header" style="color: #ffffff; font-size: 32px; font-family: 'Open Sans', sans-serif; font-weight: 700; text-transform:uppercase;" class="main-header">
+                            <div class="editable_text" style="line-height: 38px">
+                                <span class="text_container">
+                                    <multiline>
+                                        Expert Advice for Australian
+                                        Property Investment
+                                    </multiline>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr><td height="40" style="font-size: 40px; line-height: 40px;">&nbsp;</td></tr>
+                    
+                    <tr>
+                        <td align="center" class="section-img">
+                        	<a href="http://aussiepropertyguru.com/book-meeting/" target="_blank" style=" border-style: none !important; border: 0 !important;" class="editable_img"><img editable="true" mc:edit="schedule_consultation" src="images/btn_schedule_consultation.jpg" style="max-width:388px; max-height:49px; display:block;" height="49" width="388" border="0" alt="Schedule a Consultation" title="Schedule a Consultation" /></a>
+                        </td>
+                    </tr>
+                    
+                    <tr><td height="70" style="font-size: 70px; line-height: 70px;">&nbsp;</td></tr>
+                    
+                    <tr>
+                        <td>
+                            <table border="0" width="390" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="section-item">
+                                <tr>
+                                    <td>
+                                        <table border="0" width="190" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; box-shadow: 0 0 2px rgba(0,0,0,.2);" bgcolor="ffffff" class="section-item">
+                                            <tr>
+                                                <td align="center" class="section-img">
+                                                    <a href="http://aussiepropertyguru.com/our-properties/" target="_blank" style=" border-style: none !important; display: block; border: 0 !important;" class="editable_img"><img editable="true" mc:edit="Our-Properties" src="images/our-properties.jpg" style="display:block;" border="0" alt="Our Properties" title="Our Properties" /></a>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr><td height="40" style="font-size: 40px; line-height: 40px;">&nbsp;</td></tr>
+                                            <tr>
+                                                <td align="center" mc:edit="feature-title1" style="color: #283e4e; font-size: 22px; font-family: 'Open Sans', sans-serif; font-weight:400;" class="main-header title_color">
+                                                    <div class="editable_text" style="line-height: 100%">
+                                                        <span class="text_container">
+                                                        <multiline>
+                                                            <a href="http://aussiepropertyguru.com/our-properties/" target="_blank" style="color: #283e4e; text-decoration:none;">Our Properties</a>
+                                                        </multiline>
+                                                        </span>
+                                                    </div>
+                                                </td>	
+                                            </tr>
+                                            <tr><td height="35" style="font-size: 35px; line-height: 35px;">&nbsp;</td></tr>
+                                        </table>
+                                        
+                                        <table border="0" width="2" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container590">
+                                            <tr><td width="2" height="30" style="font-size: 30px; line-height: 30px;"></td></tr>
+                                        </table>
+                                        
+                                        <table border="0" width="190" align="right" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; box-shadow: 0 0 2px rgba(0,0,0,.2);" bgcolor="ffffff" class="section-item">
+                                            <tr>
+                                                <td align="center" class="section-img">
+                                                    <a href="http://aussiepropertyguru.com/contact-us/" target="_blank" style=" border-style: none !important; display: block; border: 0 !important;" class="editable_img"><img editable="true" mc:edit="Contact-Us" src="images/contact-us.jpg" style="display:block;" border="0" alt="Contact Us" title="Contact Us" /></a>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr><td height="40" style="font-size: 40px; line-height: 40px;">&nbsp;</td></tr>
+                                            
+                                            <tr>
+                                                <td align="center" mc:edit="feature-title2" style="color: #283e4e; font-size: 22px; font-family: 'Open Sans', sans-serif; font-weight:400;" class="main-header title_color">
+                                                    <div class="editable_text" style="line-height: 100%">
+                                                        <span class="text_container">
+                                                        <multiline>
+                                                            <a href="http://aussiepropertyguru.com/contact-us/" target="_blank" style="color: #283e4e; text-decoration:none;">Contact Us</a>
+                                                        </multiline>
+                                                        </span>
+                                                    </div>
+                                                </td>	
+                                            </tr>
+                                            <tr><td height="35" style="font-size: 35px; line-height: 35px;">&nbsp;</td></tr>
+                                                                                        
+                                        </table>
+    
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <table border="0" width="2" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container590">
+                                <tr><td width="2" height="30" style="font-size: 30px; line-height: 30px;"></td></tr>
+                            </table>
+                            
+                            <table border="0" width="190" align="right" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; box-shadow: 0 0 2px rgba(0,0,0,.2);" bgcolor="ffffff" class="section-item">
+                                <tr>
+                                    <td align="center" class="section-img">
+                                        <a href="http://aussiepropertyguru.com/our-services/testimonials/" target="_blank" style=" border-style: none !important; display: block; border: 0 !important;" class="editable_img"><img editable="true" mc:edit="Our-Testimonials" src="images/our-testimonials.jpg" style="display:block;" border="0" alt="Our Testimonials" title="Our Testimonials" /></a>
+                                    </td>
+                                </tr>
+                                
+                                <tr><td height="40" style="font-size: 40px; line-height: 40px;">&nbsp;</td></tr>
+                                
+                                <tr>
+                                    <td align="center" mc:edit="feature-title3" style="color: #283e4e; font-size: 22px; font-family: 'Open Sans', sans-serif; font-weight:400;"  class="main-header title_color">
+                                        <!-- ======= section text ====== -->
+                                        
+                                        <div class="editable_text" style="line-height: 100%">
+                                            <span class="text_container">
+                                            <multiline>
+                                                <a href="http://aussiepropertyguru.com/our-services/testimonials/" target="_blank" style="color: #283e4e; text-decoration:none;">Our Testimonials</a>
+                                            </multiline>
+                                            </span>
+                                        </div>
+                                    </td>	
+                                </tr>
+                                <tr><td height="35" style="font-size: 35px; line-height: 35px;">&nbsp;</td></tr>
+                                                                            
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <tr><td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td></tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
+            
+    <table border="0" width="100%" cellpadding="0" cellspacing="0" class="body_color" bgcolor="eeeeee">
+            <tr>
+                <td align="center">
+                    <table border="0" align="center" width="590" cellpadding="0" cellspacing="0" class="container590" bgcolor="ffffff" style="box-shadow: 0 0 2px rgba(0,0,0,.2);">
+                        
+                        <tr>
+                            <td align="center" class="section-img">
+                                <a href="#" style=" border-style: none !important; border: 0 !important;" class="editable_img"><img editable="true" mc:edit="main-image1" src="images/map.jpg" style="max-width:590px; max-height:249px; display:block;" width="590" height="249" border="0" alt="section image" title="section image"/></a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <table border="0" width="550" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container580">
+                                    <tr>
+                                        <td>
+                                            <table border="0" width="550" align="right" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container580">
+                                                
+                                                <tr><td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td></tr>
+                                                <tr>
+                                                    <td align="left" mc:edit="main-executeart" style="color: #2b5d83; font-weight:700; font-size: 19px; font-family: 'Open Sans', sans-serif; line-height: 25px;" class="text_color">
+                                                        <div class="editable_text" style="line-height: 24px;">
+                                                            <span class="text_container">
+                                                            <multiline>
+                                                               Brisbane’s Western Suburbs are part of the largest public infrastructure spending initiative in Australian history
+                                                            </multiline>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr><td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td></tr>
+                                                <tr>
+                                                    <td align="left" mc:edit="main-executeart1" style="color: #5f5f5f; font-weight:400; font-size: 13px; font-family: 'Open Sans', sans-serif; line-height: 22px;" class="text_color">
+                                                        <div class="editable_text" style="line-height: 22px;">
+                                                            <span class="text_container">
+                                                            <multiline>
+                                                                After my visit to Brisbane last week, I would like to mention Indooroopilly as an area that "ticks all the boxes" from an investment viewpoint.
+																<br /></br>
+																Brisbane’s western suburbs are on the verge of a boom, triggering massive upgrades which are part of the largest public infrastructure spending initiative in Australian history, propelling these already affluent areas to a whole new level of prosperity and lifestyle appeal.
+
+                                                            </multiline>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr><td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td></tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                                                        
+                    </table>
+                </td>
+            </tr>
+            <tr><td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td></tr>
+        </table>
+        
+        
+        
+    <table border="0" width="100%" cellpadding="0" cellspacing="0" class="body_color" bgcolor="eeeeee">
+            <tr>
+                <td align="center">
+                    <table border="0" align="center" width="590" cellpadding="0" cellspacing="0" class="container590">
+                        <tr>
+                            <td>
+                                <table border="0" width="287" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; box-shadow: 0 0 2px rgba(0,0,0,.2);" bgcolor="ffffff" class="container590">
+                                    
+                                    <tr>
+                                        <td align="center" class="section-img">
+                                            <a href="#" style=" border-style: none !important; border: 0 !important;" class="editable_img"><img editable="true" mc:edit="image2" src="images/pic1.jpg" border="0" alt="section image" style="display: block; " /></a>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr><td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td></tr>
+                                    
+                                    <tr>
+                                        <td valign="top">
+                                            <table border="0" width="270" align="center" cellpadding="0" cellspacing="0" class="container580">
+                                                <tr>
+                                                    <td mc:edit="main-executeart2" style="color: #2b5d83; font-weight:700; font-size: 15px; font-family: 'Open Sans', sans-serif;" class="main-header title_color">
+                                                        <div class="editable_text">
+                                                            <span class="text_container">
+                                                                <multiline>
+                                                                    Significant and increasing demand for rental accommodation and attached dwelling styles
+                                                                </multiline>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td mc:edit="main-executeart3" style="color: #5f5f5f; font-weight:400; font-size: 13px; font-family: 'Open Sans', sans-serif;" class="title_color">
+                                                        <div class="editable_text">
+                                                            <span class="text_container">
+                                                                <multiline>
+                                                                    More than 36% of Indooroopilly residents are aged between 15 - 29 years, with 41% of them employed residents are professionals. That is nearly double the Greater Brisbane average of 22%. <br /><br />This demographic is attracted by:
+                                                                </multiline>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr><td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td></tr>
+                                    
+                                    <tr>
+                                        <td valign="top">
+                                            <table border="0" width="270" align="center" cellpadding="0" cellspacing="0" class="container580">
+                                                <tr>
+                                                    <td width="17" valign="top">
+                                                       <img editable="true" src="images/bullet.jpg" width="17" height="12" title="section image" style="max-width:17px; max-height:12px; display:block;" mc:edit="bullet"  />
+                                                    </td>
+                                                    <td mc:edit="executeart10" width="253" style="color: #5f5f5f; font-weight:400; font-size: 13px; font-family: 'Open Sans', sans-serif;" class="text_color">
+                                                       The proximity to the University of Queensland St Lucia campus
+                                                    </td>
+                                                </tr>
+                                                
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr><td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td></tr>
+                                    <tr>
+                                        <td valign="top">
+                                            <table border="0" width="270" align="center" cellpadding="0" cellspacing="0" class="container580">
+                                                <tr>
+                                                    <td width="17" valign="top">
+                                                       <img editable="true" src="images/bullet.jpg" width="17" height="12" title="section image" style="max-width:17px; max-height:12px; display:block;" mc:edit="bullet1"  />
+                                                    </td>
+                                                    <td mc:edit="executeart11" width="253" style="color: #5f5f5f; font-weight:400; font-size: 13px; font-family: 'Open Sans', sans-serif;" class="text_color">
+                                                       The concentration of urban lifestyle facilities and services including entertainment, retail and cafes/restaurants
+                                                    </td>
+                                                </tr>
+                                                
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr><td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td></tr>
+                                    <tr>
+                                        <td valign="top">
+                                            <table border="0" width="270" align="center" cellpadding="0" cellspacing="0" class="container580">
+                                                <tr>
+                                                    <td width="17" valign="top">
+                                                       <img editable="true" src="images/bullet.jpg" width="17" height="12" title="section image" style="max-width:17px; max-height:12px; display:block;" mc:edit="bullet2"  />
+                                                    </td>
+                                                    <td mc:edit="executeart12" width="253" style="color: #5f5f5f; font-weight:400; font-size: 13px; font-family: 'Open Sans', sans-serif;" class="text_color">
+                                                       Accessibility to public transport
+                                                    </td>
+                                                </tr>
+                                                
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr><td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td></tr>
+                                    <tr>
+                                        <td valign="top">
+                                            <table border="0" width="270" align="center" cellpadding="0" cellspacing="0" class="container580">
+                                                <tr>
+                                                    <td width="17" valign="top">
+                                                       <img editable="true" src="images/bullet.jpg" width="17" height="12" title="section image" style="max-width:17px; max-height:12px; display:block;" mc:edit="bullet3"  />
+                                                    </td>
+                                                    <td mc:edit="executeart13" width="253" style="color: #5f5f5f; font-weight:400; font-size: 13px; font-family: 'Open Sans', sans-serif;" class="text_color">
+                                                      Employment opportunities
+                                                    </td>
+                                                </tr>
+                                                
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr><td height="75" style="font-size: 75px; line-height: 75px;">&nbsp;</td></tr>
+                                    
+                                    
+                                   
+                                    
+                                </table>
+                                
+                                <table border="0" width="5" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container590">
+                                    <tr><td width="5" height="30" style="font-size: 30px; line-height: 30px;">&nbsp;</td></tr>
+                                </table>
+                                
+                                <table border="0" width="287" align="right" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; box-shadow: 0 0 2px rgba(0,0,0,.2);" bgcolor="ffffff" class="container590">
+                                    
+                                    <tr>
+                                        <td align="center" class="section-img">
+                                            <a href="#" style=" border-style: none !important; border: 0 !important;" class="editable_img"><img editable="true" mc:edit="image3" src="images/pic2.jpg" border="0" alt="section image" style="display: block;"/></a>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr><td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td></tr>
+                                    
+                                    <tr>
+                                        <td valign="top">
+                                            <table border="0" width="270" align="center" cellpadding="0" cellspacing="0" class="container580">
+                                                <tr>
+                                                    <td mc:edit="executeart14" style="color: #2b5d83; font-weight:700; font-size: 15px; font-family: 'Open Sans', sans-serif;" class="main-header title_color">
+                                                        <div class="editable_text">
+                                                            <span class="text_container">
+                                                                <multiline>
+                                                                    These already affluent areas are being propelled to a whole new level of prosperity and lifestyle appeal
+                                                                </multiline>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td mc:edit="executeart15" style="color: #5f5f5f; font-weight:400; font-size: 13px; font-family: 'Open Sans', sans-serif;" class="title_color">
+                                                        <div class="editable_text">
+                                                            <span class="text_container">
+                                                                <multiline>
+                                                                    The massive infrastructure spending is propelling these already affluent areas to a whole new level of prosperity and lifestyle appeal. Some examples of the infrastructure spending includes:
+                                                                </multiline>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                 <tr>
+                                                    <td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top">
+                                                        <table border="0" width="270" align="center" cellpadding="0" cellspacing="0" class="container580">
+                                                            <tr>
+                                                                <td width="17" valign="top">
+                                                                    <img editable="true" src="images/bullet.jpg" width="17" height="12" title="section image" style="max-width:17px; max-height:12px; display:block;" mc:edit="bullet4"  />
+                                                                    </td>
+                                                                    <td mc:edit="executeart16" width="253" style="color: #5f5f5f; font-weight:400; font-size: 13px; font-family: 'Open Sans', sans-serif;" class="text_color">
+                                                                    The Legacy Way Tunnel, a $1.5 billion 4.6km tunnel linking the Western Freeway to the Inner City Bypass which will open in 2015
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                  <tr>
+                                                    <td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top">
+                                                        <table border="0" width="270" align="center" cellpadding="0" cellspacing="0" class="container580">
+                                                            <tr>
+                                                                <td width="17" valign="top">
+                                                                    <img editable="true" src="images/bullet.jpg" width="17" height="12" title="section image" style="max-width:17px; max-height:12px; display:block;" mc:edit="bullet5"  />
+                                                                    </td>
+                                                                    <td mc:edit="executeart17" width="253" style="color: #5f5f5f; font-weight:400; font-size: 13px; font-family: 'Open Sans', sans-serif;" class="text_color">
+                                                                    The $450 million facelift of Indooroopilly Shopping Centre which is one of Brisbane’s largest retail redevelopment investments
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td valign="top">
+                                                        <table border="0" width="270" align="center" cellpadding="0" cellspacing="0" class="container580">
+                                                            <tr>
+                                                                <td width="17" valign="top">
+                                                                    <img editable="true" src="images/bullet.jpg" width="17" height="12" title="section image" style="max-width:17px; max-height:12px; display:block;" mc:edit="bullet6"  />
+                                                                    </td>
+                                                                    <td mc:edit="executeart18" width="253" style="color: #5f5f5f; font-weight:400; font-size: 13px; font-family: 'Open Sans', sans-serif;" class="text_color">
+                                                                    The Indooroopilly Shopping Centre facelift is adding 30,000m² for over 100 new fashion stores, restaurants, cafés, salons and specialty shops and David Jones
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                
+                                                 
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr><td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td></tr>
+                                </table>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <tr><td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td></tr>
+    </table>
+       
+    
+    <table border="0" width="100%" cellpadding="0" cellspacing="0" class="body_color" bgcolor="eeeeee">
+        <tr>
+        	<td align="center">
+                <table border="0" align="center" width="590" cellpadding="0" cellspacing="0" class="container590" bgcolor="ffffff" style="box-shadow: 0 0 2px rgba(0,0,0,.2);">
+                    <tr>
+                    	<td align="center" class="section-img"><a href="#" style=" border-style: none !important; border: 0 !important;" class="editable_img"><img editable="true" mc:edit="main-image1" src="images/pic3.jpg" style="max-width:590px; max-height:249px; display:block;" width="590" height="249" border="0" alt="section image"/></a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table border="0" width="550" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container580">
+                                <tr>
+                                    <td>
+                                        <table border="0" width="550" align="right" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container580">
+                                        
+                                        	<tr><td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td></tr>
+                                            <tr>
+                                                <td align="left" mc:edit="executeart19" style="color: #2b5d83; font-weight:700; font-size: 19px; font-family: 'Open Sans', sans-serif; line-height: 25px;" class="text_color">
+                                                    <div class="editable_text" style="line-height: 24px;">
+                                                        <span class="text_container">
+                                                        <multiline>
+                                                           John McGrath’s five South East Queensland areas to consider
+                                                        </multiline>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        	<tr><td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td></tr>
+                                            <tr>
+                                                <td align="left" mc:edit="executeart20" style="color: #5f5f5f; font-weight:400; font-size: 13px; font-family: 'Open Sans', sans-serif; line-height: 22px;" class="text_color">
+                                                    <div class="editable_text" style="line-height: 22px;">
+                                                        <span class="text_container">
+                                                        <multiline>
+                                                            Many investors are looking towards Queensland for growth. Here are John McGrath’s five South East Queensland areas to consider.
+                                                        </multiline>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        	<tr><td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td></tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        
+                            <table border="0" width="550" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container580">
+                                <tr>
+                                	<td>
+                                        <table border="0" width="120" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container580">
+                                        
+                                            <tr>
+                                            	<td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                            	<td>
+                                                    <table border="0" width="120" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container580">
+                                                        <tr>
+                                                            <td align="left">
+                                                                <img class="hide" editable="true" src="images/comma.jpg" width="93" height="79" title="section image" style="max-width:93px; max-height:79px; display:block;" mc:edit="commaedit"  />
+                                                            </td>
+                                                        	<td align="right"><img src="images/divider.png" alt="" style="display: block;" class="hide" /></td>
+                                                        </tr>
+                                                    </table>
+                                        		</td>
+                                        	</tr>
+                                        </table>
+                                        <table border="0" width="5" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container580 hide">
+                                            <tr>
+                                            	<td width="5" height="30" style="font-size: 30px; line-height: 30px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                        <table border="0" width="415" align="right" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container580">
+                                            <tr>
+                                            	<td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left" mc:edit="executeart21" style="color: #5f5f5f; font-size: 13px; font-family: 'Open Sans', sans-serif;" class="text_color">
+                                                    <div class="editable_text">
+                                                        <span class="text_container">
+                                                            <multiline>
+                                                            	The inner ring markets, that is five to six kilometres from the CBD, were noted as being in “strong demand” followed by the middle ring, 10 kilometres out.
+                                                                <br /><br />
+                                                                We are starting to see that classic ripple effect as more people expand their search to the middle ring where they can get bigger blocks at slightly better prices yet still with easy access to the CBD.
+                                                            </multiline>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                            	<td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left" style="color: #dbc164; font-size: 16px; font-family: 'Open Sans', sans-serif;" mc:edit="executeart22">
+                                                    <div class="editable_text">
+                                                        <span class="text_container">
+                                                           	<singleline>&mdash; John McGrath</singleline>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        <tr>
+                                        <td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                        </tr>
+                                        </table>
+                                	</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+    		</td>
+    	</tr>
+        <tr>
+        	<td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+        </tr>
+    </table>
+    
+    
+    <table border="0" width="100%" cellpadding="0" cellspacing="0" class="body_color" bgcolor="eeeeee">
+        <tr>
+        <td align="center">
+            <table border="0" align="center" width="590" cellpadding="0" cellspacing="0" class="container590" bgcolor="273d4c" style="box-shadow: 0 0 2px rgba(0,0,0,.2);">
+            
+                <tr>
+                	<td height="30"></td>
+                </tr>
+                <tr>
+                	<td align="center" class="section-img"><a href="http://aussiepropertyguru.com/book-meeting/" target="_blank" style=" border-style: none !important; border: 0 !important;" class="editable_img"><img editable="true" mc:edit="main-image1" src="images/click_here.jpg" style="max-width:533px; max-height:67px; display:block;" width="533" height="67" border="0" alt="section image"/></a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border="0" width="550" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container580">
+                        <tr>
+                            <td>
+                                <table border="0" width="550" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container580">
+                                    <tr>
+                                    	<td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                    <td align="left" mc:edit="executeart23" style="color: #ffffff; font-size: 19px; font-family: 'Open Sans', sans-serif; font-weight:700; line-height: 25px;" class="text_color">
+                                        <div class="editable_text" style="line-height: 24px;">
+                                            <span class="text_container">
+                                            	<multiline> Interested in finding out how you can take advantage of this investment opportunity?</multiline>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    </tr>
+                                <tr>
+                                <td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td align="left" mc:edit="executeart24" style="color: #ffffff; font-size: 13px; font-family: 'Open Sans', sans-serif;" class="text_color">
+                                        <div class="editable_text">
+                                            <span class="text_container">
+                                            	<multiline> 
+                                                	Contact me at <span style="color:#dbc164;">Aussie Property Guru</span> to set up an obligation-free appointment to learn how you can take advantage of this excellent investment opportunity.
+                                                    <br /><br />
+                                                    I hope you find this interesting reading and that it helps you make better informed decisions.
+
+                                                    Best regards,<br /><br />
+                                                    Dr Andrew Unterweger<br />
+                                                    MB BS, CFP&reg;, Dip FP, Dip FNS, MFAA, AFA, SPAA, REA<br />
+
+                                                </multiline>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    	<td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        <tr>
+        	<td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+        </tr>
+    </table>
+    
+    <table border="0" width="100%" cellpadding="0" cellspacing="0" class="body_color" bgcolor="eeeeee">
+        <tr>
+        <td align="center">
+            <table border="0" align="center" width="590" cellpadding="0" cellspacing="0" class="container590" bgcolor="eeeeee">
+            	<tr>
+                	<td>
+                        <table border="0" width="404" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container590">
+                            <tr>
+                                <td align="left" mc:edit="executeart25" style="color: #5f5f5f; font-size: 13px; font-family: 'Open Sans', sans-serif;" class="text_color">
+                                    <div class="editable_text">
+                                        <span class="text_container">
+                                        <multiline> 
+                                       		+65 6707 4738 <br />
+                                            <a style="color:#5f5f5f; text-decoration:underline;" href="mailto:info@aussiepropertyguru.com">info@aussiepropertyguru.com</a>
+                                        </multiline>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table border="0" width="170" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container590 footer-space">
+                            <tr>
+                                <td mc:edit="executeart26">
+                                    <span>
+                                        <a href="https://www.facebook.com/aussiepropertyguru/" target="_blank" style="color:#ededed; text-decoration: none; background: none;">
+                                        <img src="images/facebook.png" alt="facebook" title="facebook" width="23" height="22" border="0" style="display: inline-block;" />
+                                        </a>
+                                        &nbsp;
+                                        <a href="http://twitter.com/aussiepropguru" target="_blank" style="color:#ededed; text-decoration: none; background: none;">
+                                        <img src="images/twitter.png" alt="twitter" title="twitter" width="23" height="22" border="0" style="display: inline-block;" />
+                                        </a>
+                                        &nbsp;
+                                        <a href="https://plus.google.com/+Aussiepropertyguru" target="_blank" style="color:#ededed; text-decoration: none; background: none;">
+                                        <img src="images/gplus.png" alt="Google+" title="Google+" width="23" height="22" border="0" style="display: inline-block;" />
+                                        </a>
+                                        &nbsp;
+                                        <a href="https://www.linkedin.com/company/aussie-property-guru" target="_blank" style="color:#ededed; text-decoration: none; background: none;">
+                                        <img src="images/linkedIn.png" alt="LinkedIn" title="LinkedIn " width="23" height="22" border="0" style="display: inline-block;" />
+                                        </a>
+                                        &nbsp;
+                                        <a href="https://www.youtube.com/channel/UCAsh-Rlq3moTVUT3kX4LvXw" target="_blank" style="color:#ededed; text-decoration: none; background: none;">
+                                        <img src="images/you-tube.png" alt="YouTube" title="YouTube" width="23" height="22" border="0" style="display: inline-block;" />
+                                        </a>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        <tr>
+        	<td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+        </tr>
+    </table>
+</body>
+</html>

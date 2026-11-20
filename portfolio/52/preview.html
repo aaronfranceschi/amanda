@@ -1,0 +1,706 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+<title>*|MC:SUBJECT|*</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css' />
+<link href='https://fonts.googleapis.com/css?family=Arimo:400,700,700italic' rel='stylesheet' type='text/css' />
+ 
+<script language="javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+    
+    //Disable F12 Key
+    $(document).keydown(function(event){
+    if(event.keyCode==123){
+        return false;
+    }
+        else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+             return false;
+    }
+    });
+
+    $(document).on("contextmenu",function(e){        
+       e.preventDefault();
+    });
+    
+    //Disable print Key
+    $(window).keyup(function(e){
+      if(e.keyCode == 44){
+        $("body").hide();
+      }
+    });
+    
+});
+</script>
+
+<style type="text/css"> 
+
+body{
+    -webkit-text-size-adjust:100%;
+}
+
+
+.executeart html
+{
+	width: 100%;
+}
+
+.executeart::-moz-selection{background:#77838e;color:#323437;}
+::selection{background:#fefac7;color:#323437;}
+
+.executeart body { 
+   background-color: #77838e; 
+   margin: 0; 
+   padding: 40px 0px !important; 
+}
+
+.executeart .ReadMsgBody
+{
+	width: 100%;
+	background-color: #77838e;
+}
+.executeart .ExternalClass
+{
+	width: 100%;
+	background-color: #77838e;
+}
+
+.executeart a { 
+    color:#2e2e2e; 
+	text-decoration:underline;
+	font-weight:normal;
+	font-style: italic;
+	
+} 
+.executeart a:hover { 
+    color:#5a84a1; 
+	text-decoration:none;
+	font-weight:normal;
+	font-style: italic;
+	transition: all .25s ease-in-out;
+}
+
+.executeart a.heading-link {
+	text-decoration:none;
+	font-weight:normal;
+	font-style: normal;
+}
+
+.executeart a.heading-link:hover {
+	text-decoration:none;
+	font-weight:normal;
+	font-style: normal;
+}
+
+.executeart p,
+.executeart div {
+	margin: 0 !important;
+}
+.executeart table {
+	border-collapse: collapse;
+     mso-table-lspace:0pt;
+    mso-table-rspace:0pt;
+}
+
+table{
+    mso-table-lspace:0pt;
+    mso-table-rspace:0pt;
+}
+
+img{
+    -ms-interpolation-mode:bicubic;
+}
+
+#outlook a{
+    padding:0;
+}
+
+@media only screen and (max-width: 720px)  {
+	body { width: auto !important; padding: 40px 20px !important;}
+	body table table{width:100% !important; }
+	body table[class="table-wrapper"] {width: 100% !important; margin: 0 auto !important;}
+	body table[class="table-inner"] {width: 100% !important; margin: 0 auto !important;}
+	body table[class="full"] {width: 100% !important; margin: 0 auto !important;}
+	body td[class="center"] {text-align: center !important;}
+	body td[class="rewrite_padding"] {padding:30px !important;}
+
+	body img[class="img_scale"] {width: 100% !important; height: auto !Important;}
+	body img[class="divider"] {width: 100% !important; height: 1px !Important;}
+}
+
+@media only screen and (max-width: 600px)  {
+	body { width: auto !important; padding: 40px 20px !important;}
+	body table table{width:100% !important; }
+	body table[class="table-wrapper"] {width: 100% !important; margin: 0 auto !important;}
+	body table[class="table-inner"] {width: 100% !important; margin: 0 auto !important;}
+	body table[class="full"] {width: 100% !important; margin: 0 auto !important;}
+	body td[class="center"] {text-align: center !important;}
+	body td[class="rewrite_padding"] {padding:30px !important;}
+
+	body img[class="img_scale"] {width: 100% !important; height: auto !Important;}
+	body img[class="divider"] {width: 100% !important; height: 1px !Important;}
+}
+
+@media only screen and (max-width: 479px)  {
+	body { width: auto !important; padding: 40px 20px !important;}
+	body table table{width:100% !important; }
+	body table[class="table-wrapper"] {width: 100% !important; margin: 0 auto !important;}
+	body table[class="table-inner"] {width: 100% !important; margin: 0 auto !important;}
+	body table[class="full"] {width: 100% !important; margin: 0 auto !important;}
+	body td[class="center"] {text-align: center !important;}
+	body td[class="rewrite_padding"] {padding:30px !important;}
+	body td[class="feature"] {width:25%; display: block !Important; padding: 4px 0px !important; float: left !important;}
+	body img[class="img_scale"] {width: 100% !important; height: auto !Important;}
+	body img[class="divider"] {width: 100% !important; height: 1px !Important;}
+    
+}
+
+</style>
+
+<!--[if mso 13]>
+    <style type="text/css">
+    td span {
+	font-family: Arial, sans-serif;
+    }
+    
+     td a {
+	font-family: Arial, sans-serif;
+    }
+    </style>
+<![endif]-->
+
+
+<!--[if lt mso 14]>
+    <style type="text/css">
+    td span {
+	font-family: Arial, sans-serif;
+    }
+    
+    td a {
+	font-family: Arial, sans-serif;
+    }
+    </style>
+<![endif]-->
+
+<!--[if mso 15]>
+    <style type="text/css">
+    td span {
+	font-family: Arial, sans-serif;
+    }
+    
+     td a {
+	font-family: Arial, sans-serif;
+    }
+    </style>
+<![endif]-->
+</head>
+<body class="executeart" bgcolor="#77838e" style="padding:20px 0px;">
+<table data-templateapp="Header" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#77838e" style="padding: 0; margin: 0;">
+	<tr>
+		<td valign="top" align="center">
+			<table class="table-wrapper" bgcolor="#77838e" width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="720">
+						<table class="table-inner" width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+								<td mc:edit="article_month" align="right" style="margin:0; background:#77838e; padding:0; text-align:right; font-size:15px ; font-weight: normal; color:#ffffff; font-family: 'Arimo', sans-serif; mso-line-height-rule: exactly;">
+                                    <span>
+                                        Newsletter March 2016
+                                    </span>
+                                </td>
+							</tr>
+                            <tr>
+								<td height="20" style="padding:0; line-height: 0;">&nbsp;
+								</td>
+							</tr>
+                            
+                            <tr>
+								<td height="22" style="padding:0; line-height: 0;">&nbsp;
+								   <a href="http://10thwhiskey.com" target="_blank"> <img src="images/header-banner.jpg" alt="10thwhiskey.com" title="10thwhiskey.com" style="max-width:720px; max-height:440px" class="img_scale" mc:edit="header_image"/></a>
+								</td>
+							</tr>
+						</table>
+						
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<table data-templateapp="Promo Box" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#77838e" style="padding: 0; margin: 0;">
+	<tr>
+		<td valign="top" align="center">
+			<table class="table-wrapper" bgcolor="#2d2d2d" width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="700" style="padding: 0px;">
+						<table class="table-inner" width="700" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+								<td valign="top" style="padding: 10px;">
+									<table class="full" width="698" bgcolor="#2d2d2d" border="0" align="right" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td align="center" valign="top" style="padding: 20px; margin: 0; border: 1px solid #8e8989;">
+												<table border="0" align="center" cellpadding="0" cellspacing="0">
+													<tr>
+														<td  mc:edit="article_content" align="center" style="background-color:#2d2d2d; font-weight: normal; font-size:21px ; color:#ffffff; font-family: 'Roboto Slab', sans-serif; line-height: 34px;mso-line-height-rule: exactly;">
+															<span>
+															    WE’RE HERE TO FILL THE GLASS THAT YOU RAISE TO SALUTE
+															</span>
+														</td>
+													</tr>
+													<tr>
+														<td mc:edit="article_content1" align="center" style="background-color:#2d2d2d; padding-top:6px; text-transform:uppercase; font-weight: bold; font-size:30px ; color:#ffffff; font-family: 'Roboto Slab', sans-serif; mso-line-height-rule: exactly;">
+															The men of the 10th and to toast the mountain lifestyle we all cherish!
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<table data-templateapp="Left Image and Right Text 1" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#77838e" style="padding: 0; margin: 0;">
+	<tr>
+		<td valign="top" align="center">
+			<table class="table-wrapper" bgcolor="#5a84a1" width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="720" style="padding: 0px;">
+						<table class="table-inner" width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+								<td valign="top" style="padding: 0px;">
+									<table class="full" width="375" border="0" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td align="left" valign="top">
+												<span>
+													<a href="#" style="color:#000000;">
+													    <img class="img_scale" src="images/wine-1st-one.png" alt="Hello Whiskey Lovers!" title="Hello Whiskey Lovers!" width="" height="" border="0" style="display:block; margin:0; max-width:375px; max-height:300px" mc:edit="whiskey-lovers" />
+													</a>
+												</span>
+											</td>
+										</tr>
+									</table>
+									<table width="1" border="0" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td width="100%" height="1" style="line-height:0;">&nbsp;									
+											
+											</td>
+										</tr>
+									</table>
+									<table class="full" width="325" border="0" align="right" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td class="rewrite_padding" style="padding:20px 20px 20px 0px;">
+												<table width="100%" border="0" cellpadding="0" cellspacing="0" >
+													<tr>
+														<td mc:edit="article_box1" align="left" valign="top" style="background-color:#5a84a1; margin: 0; padding-bottom: 10px; font-size:18px ; font-weight: bold; color:#ffffff; font-family: 'Arimo', sans-serif; mso-line-height-rule: exactly;">
+															<span>  
+                                                                Hello Whiskey Lovers!
+                                                            </span>
+														</td>
+													</tr>
+													<tr>
+														<td align="left" valign="top" style="margin: 0; padding-bottom: 10px; text-transform: uppercase; font-size:14px ; font-weight: normal; color:#323437; font-family: 'Arimo', Arial, sans-serif;">
+															<span>
+																<img src="images/divider-2.png" alt="divider" width="41" height="6" style="display:block;" />
+															</span>
+														</td>
+													</tr>
+													<tr>
+														<td mc:edit="article_box2" align="left" valign="top" style="background-color:#5a84a1; margin: 0; padding: 0; font-size:15px ; font-weight: normal; color:#ffffff; font-family: 'Arimo', sans-serif; line-height:125%;  mso-line-height-rule: exactly;">
+															<span>
+																Welcome to our 1st edition newsletter!  Every month we will create an interesting read about what is happening with us. We will also have some fun drink recipes, facts and history on the 10th Mountain Division.  Please share with your friends and family! 
+															</span>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<table data-templateapp="Left Text and Right Image" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#77838e" style="padding: 0; margin: 0;">
+	<tr>
+		<td valign="top" align="center">
+			<table class="table-wrapper" bgcolor="#887a58" width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="720" style="padding: 0px;">
+						<table class="table-inner" width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+								<td valign="top" style="padding: 0px;">
+									<table class="full" width="325" border="0" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td class="rewrite_padding" style="padding: 20px 0px 20px 20px;">
+												<table width="100%" border="0" cellpadding="0" cellspacing="0" >
+													<tr>
+														<td mc:edit="article_box3" align="left" valign="top" style="background-color:#887a58; margin: 0; padding-bottom: 10px; font-size:18px ; font-weight: bold; color:#ffffff; font-family: 'Arimo', Arial, sans-serif; mso-line-height-rule: exactly;">
+															<span>
+																    DRINK OF THE MONTH
+															</span>
+														</td>
+													</tr>
+													<tr>
+														<td align="left" valign="top" style="margin: 0; padding-bottom: 10px; text-transform: uppercase; font-size:14px ; font-weight: normal; color:#323437; font-family: 'Arimo', Arial, sans-serif;">
+															<span>
+																<img src="images/divider-2.png" alt="divider" width="41" height="6" style="display:block;" />
+															</span>
+														</td>
+													</tr>
+													<tr>
+														<td mc:edit="article_box4" align="left" valign="top" style="background-color:#887a58; margin: 0; padding: 0; font-size:15px ; font-weight: normal; color:#ffffff; font-family: 'Arimo', sans-serif; line-height:125%;  mso-line-height-rule: exactly;">
+															<span>
+																8 Raspberries  <br />  <br />
+                                                                ½ ounce Grenadine <br /><br />
+                                                                1 ounce 10th Mountain Vodka <br /><br />
+                                                                1 Teaspoon fresh lemon juice
+															</span>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+									<table width="1" border="0" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td width="100%" height="1" style="line-height:0;">&nbsp;									
+											
+											</td>
+										</tr>
+									</table>
+									<table class="full" width="375" border="0" align="right" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td align="left" valign="top" style="margin: 0; padding: 0; text-transform: uppercase; font-size:20px ; font-weight: 600; color:#323437; font-family: 'Arimo', Arial, sans-serif; line-height: 0;">
+												<span>
+													<a href="#" style="color:#2d2d2d;">
+													<img class="img_scale" src="images/wine-2nd.png" alt="DRINK OF THE MONTH" title="DRINK OF THE MONTH" width="" height="" border="0" style="display:block; margin:0; max-width:375px; max-height:300px"  mc:edit="drink-month"/>
+													</a>
+												</span>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<table data-templateapp="Left Image and Right Text 2" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#77838e" style="padding: 0; margin: 0;">
+	<tr>
+		<td valign="top" align="center">
+			<table class="table-wrapper" bgcolor="#474358" width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="720" style="padding: 0px;">
+						<table class="table-inner" width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+								<td valign="top" style="padding: 0px;">
+									<table class="full" width="375" border="0" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td align="left" valign="top" style="margin: 0; padding: 0; text-transform: uppercase; font-size:20px ; font-weight: 600; color:#323437; font-family: 'Arimo', Arial, sans-serif; line-height: 0;">
+												<span>
+													<a href="#" style="color:#2d2d2d;">
+													    <img class="img_scale" src="images/wine-3rd.png" alt="Upcoming events" width="" height="" border="0" style="display:block; margin:0; max-width:375px; max-height:300px"  mc:edit="drink-upcoming" />
+													</a>
+												</span>
+											</td>
+										</tr>
+									</table>
+									<table width="1" border="0" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td width="100%" height="1" style="line-height:0;">&nbsp;									
+											
+											</td>
+										</tr>
+									</table>
+									<table class="full" width="325" border="0" align="right" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td class="rewrite_padding" style="padding: 20px 20px 20px 0px;">
+												<table width="100%" border="0" cellpadding="0" cellspacing="0" >
+													<tr>
+														<td mc:edit="article_box5" align="left" valign="top" style="background-color:#474358; margin: 0; padding-bottom:10px; font-size:18px ; font-weight: bold; color:#ffffff; font-family: 'Arimo', Arial, sans-serif; mso-line-height-rule: exactly;">
+															<span>
+																    Upcoming events
+															</span>
+														</td>
+													</tr>
+													<tr>
+														<td align="left" valign="top" style="margin: 0; padding-bottom: 10px; text-transform: uppercase; font-size:14px ; font-weight: normal; color:#323437; font-family: 'Arimo', Arial, sans-serif;">
+															<span>
+																<img src="images/divider-2.png" alt="divider" width="41" height="6" style="display:block;" />
+															</span>
+														</td>
+													</tr>
+													<tr>
+														<td mc:edit="article_box6" align="left" valign="top" style="background-color:#474358; margin: 0; padding: 0; font-size:15px ; font-weight: normal; color:#ffffff; font-family: 'Arimo', sans-serif; line-height:125%;  mso-line-height-rule: exactly;">
+															<span>
+																Super Bowl Party  Tastng Room <br /><br />
+                                                                Whiskey Wind Down The Westin Resort, Avon <br /><br />
+                                                                Super Bowl Party  Tastng Room <br /><br />
+                                                                Super Bowl Party  Tastng Room
+															</span>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<table data-templateapp="Features" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#77838e" style="padding: 0; margin: 0;">
+    <tr>
+        <td valign="top" align="center">
+            <table class="table-wrapper" width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="720" style="padding: 0px;">
+                        <table class="table-inner" width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td valign="top" style="padding: 0px;">
+                                    <table class="full" width="720" border="0" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                        <tr>
+                                            <td class="feature" bgcolor="#756533" height="8"></td>
+                                            <td class="feature" bgcolor="#783e3e" height="8"></td>
+                                            <td class="feature" bgcolor="#347540" height="8"></td>
+                                            <td class="feature" bgcolor="#2f7472" height="8"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#77838e" style="padding:0; margin:0;">
+	<tr>
+		<td valign="top" align="center">
+			<table class="table-wrapper" width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="720" style="padding: 0px;">
+						<table class="table-inner" width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+								<td valign="top" style="padding: 0px;">
+									<table bgcolor="#783e3e" class="full" width="720" border="0" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                         <tr>
+                                            <td height="20"></td>
+                                         </tr>
+                                        <tr>
+                                            <td mc:edit="article_box7" align="center" bgcolor="#783e3e" style="background-color:#783e3e; margin: 0; text-align:center; padding: 0; font-size:17px; font-weight:bold; color:#ffffff; font-family: 'Arimo', sans-serif; line-height:125%; mso-line-height-rule: exactly;">
+                                                “Happiness is having a rare steak, a bottle of whiskey and a dog to eat the rare steak.”
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td height="10"></td>
+                                         </tr>
+                                         <tr>
+                                            <td mc:edit="article_box8" align="right" bgcolor="#783e3e" style="background-color:#783e3e; margin: 0; text-align:right; padding-right:20px; font-size:14px; font-weight:normal; color:#ffffff; font-family: 'Arimo', sans-serif; line-height:125%; mso-line-height-rule: exactly;">
+                                               - Johnny Carson, Late Night Host
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="20"></td>
+                                         </tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<table data-templateapp="Fullwidth Banner" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#77838e" style="padding: 0; margin: 0;">
+	<tr>
+		<td valign="top" align="center">
+			<table class="table-wrapper" bgcolor="#2d2d2d" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="600" style="padding: 0px;">
+						<table class="full" width="600" border="0" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+							<tr>
+								<td align="left" valign="top" style="margin: 0; padding: 0; text-transform: uppercase; font-size:36px ; font-weight: bold; color:#ffffff; font-family: 'Arimo', Arial, sans-serif; line-height: 0; ">
+									<span>
+										<a href="#" style="color:#2d2d2d; text-decoration: none;">
+											<img class="img_scale" src="images/wine-strip-picture.png" alt="Wine" width="" height="" border="0" style="display: block; margin:0; max-width:720px; max-height:107px" mc:edit="banner-strip" />
+										</a>
+									</span>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<table data-templateapp="Contact" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#77838e" style="padding: 0; margin: 0;">
+	<tr>
+		<td valign="top" align="center">
+			<table class="table-wrapper" bgcolor="#ffffff" width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+				
+                <tr>
+					<td height="20" style="padding:0; line-height: 0;">&nbsp;</td>
+				</tr>
+                <tr>
+					<td width="720" style="padding:10px 30px;">
+						<table class="table-inner" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+								<td valign="top" style="padding: 0px;">
+									<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td mc:edit="article_box9" align="left" valign="top" style="margin: 0; padding: 0; font-size:18px ; font-weight:bold; color:#1c1c1c; font-family: 'Arimo', Arial, sans-serif; mso-line-height-rule:exactly;">
+											    EVENTS AROUND TOWN
+                                            </td>
+										</tr>
+                                        <tr>
+											<td mc:edit="article_box10" align="left" valign="top" style="margin: 0; padding: 0; font-size:19px ; font-weight:normal; color:#1c1c1c; font-family: 'Arimo', Arial, sans-serif; mso-line-height-rule:exactly;">
+											    Carnivail
+                                            </td>
+										</tr>
+                                        <tr>
+                                            <td height="20" style="padding:0; line-height: 0;">&nbsp;</td>
+                                        </tr>
+                                        
+                                        <tr>
+											<td valign="top">
+                                            <div mc:repeatable="">
+											      <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; margin-bottom:15px;">
+                                                        <tr>
+                                                            <td mc:edit="article_box11" bordercolor="#e4e7ea" style="background-color:#e4e7ea; padding:15px; ont-size:15px ; font-weight:normal; color:#1c1c1c; font-family: 'Arimo', Arial, sans-serif; mso-line-height-rule:exactly; line-height:120%;">
+                                                                February 6th - 9th 
+                                                            </td>
+                                                        </tr>   
+                                                  </table> 
+                                                 </div>
+                                                 <div mc:repeatable="">
+                                                  <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; margin-bottom:15px;">
+                                                        <tr>
+                                                            <td mc:edit="article_box12" bordercolor="#e4e7ea" style="background-color:#e4e7ea; padding:15px; ont-size:15px ; font-weight:normal; color:#1c1c1c; font-family: 'Arimo', Arial, sans-serif; mso-line-height-rule:exactly; line-height:120%;">
+                                                                February 6th - 9th
+                                                            </td>
+                                                        </tr>   
+                                                  </table>
+                                                 </div>
+                                            </td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td height="20" style="padding:0; line-height: 0;">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<table data-templateapp="Footer" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#77838e" style="padding: 0; margin: 0;">
+	<tr>
+		<td valign="top" align="center">
+			<table class="table-wrapper" bgcolor="#282828" width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="720" style="padding:0px 35px;">
+						<table class="table-inner" width="650" border="0" align="center" cellpadding="0" cellspacing="0">
+							
+                             <tr>
+                                <td height="20" style="padding:0; line-height:0;">&nbsp;</td>
+                            </tr>   
+                            <tr>
+								<td mc:edit="article_box13" valign="top" align="center" style="background-color:#282828; font-size:15px; font-weight: normal; color:#ffffff; font-family: 'Arimo', Arial, sans-serif; mso-line-height-rule: exactly;">
+                                    Talk to us today
+								</td>
+							</tr>
+                            
+                             <tr>
+                                <td height="10" style="padding:0; line-height:0;">&nbsp;</td>
+                            </tr>
+                            
+                            <tr>
+								<td mc:edit="article_box14" valign="top" align="center" style="background-color:#282828; font-size:35px; font-weight: normal; color:#ffffff; font-family: 'Roboto Slab', Arial, sans-serif; mso-line-height-rule: exactly;">
+                                    970.470.4215
+								</td>
+							</tr>
+                            
+                             <tr>
+                                <td height="10" style="padding:0; line-height:0;">&nbsp;</td>
+                            </tr>
+                            
+                             <tr>
+                                <td align="center" valign="top">
+                                    <table width="90" border="0" align="center" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td><a href="https://www.facebook.com/10thmtnwhiskey" target="_blank" style="color:#252525; text-decoration:none;"><img src="images/facebook.png" width="17" height="17" alt="Facebook" title="Facebook" /></a></td>
+                                            <td><a href="https://twitter.com/10thmtnwhiskey" target="_blank" style="color:#252525; text-decoration:none;"><img src="images/twitter.png" width="17" height="17" alt="Twitter" title="Twitter" /></a></td>
+                                            <td><a href="http://instagram.com/10thmtnwhiskey" target="_blank" style="color:#252525; text-decoration:none;"><img src="images/instragam.png" width="17" height="17" title="Instagram"  alt="Instagram"/></a></td>
+                                            <td><a href="http://10thmountainwhiskey.tumblr.com/" target="_blank" style="color:#252525; text-decoration:none;"><img src="images/tumblr.png" width="17" height="17" alt="Tumblr" title="Tumblr" /></a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            
+                             <tr>
+                                <td height="10" style="padding:0; line-height:0;">&nbsp;</td>
+                            </tr>
+                            
+                             <tr>
+                                <td style="padding:0; line-height:0;" align="center">
+                                    <img src="images/bottom-divider.png" alt="" title="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20" style="padding:0; line-height:0;">&nbsp;</td>
+                            </tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

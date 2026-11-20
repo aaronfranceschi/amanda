@@ -1,0 +1,18 @@
+body{ background:url(../image/old_moon.png) top left repeat!important;}
+
+#page-wrapper {margin-right: auto;  margin-left: auto;}
+
+@media (min-width: 768px) {
+    #page-wrapper {width: 750px;}
+    #page-wrapper{box-shadow: 0 0 8px rgba(0, 0, 0, .5);}
+}
+
+@media (min-width: 992px) {
+    #page-wrapper {width: 970px;}
+    #page-wrapper{box-shadow: 0 0 8px rgba(0, 0, 0, .5);}
+}
+
+@media (min-width: 1200px) {
+    #page-wrapper {width: 1170px;}
+    #page-wrapper{box-shadow: 0 0 8px rgba(0, 0, 0, .5);}
+}

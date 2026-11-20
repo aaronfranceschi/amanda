@@ -1,0 +1,484 @@
+body {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 340px !important;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background:#000007;
+   
+}
+#executeart-panel {
+    width: 340px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background-color: #f2e96d;
+    z-index: 11;
+    border-right: 1px solid #f2e96d;
+}
+.executeart-panel-title {
+    background-color: #4a494a;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+    padding: 15px 0px 15px 0px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.responsive-view {
+    text-align: center;
+    padding-bottom:0px;
+}
+
+.responsive-view p{ font-size:16px; font-weight:bold; text-align:center; line-height:22px; margin:0px!important; padding:0px!important;}
+
+.all-email-tab-area{display:flex; justify-content:center; padding-bottom:50px;}
+/*
+.responsive-view{
+    background-image: url('../images/preview-icon.png');
+    background-position:0% 0px;
+    line-height:35px;
+    background-repeat: no-repeat;
+    margin-bottom:5px;
+    padding: 0 0 0 40px;
+    }*/
+
+.executeart-back-pre {
+    background-color: #12151d;
+    color: #ffffff;
+    bottom: 0;
+    left: 0;
+    padding: 20px 10px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 14px;
+    text-align:center;
+}
+.executeart-screenshots-link {
+    background-image: url('../images/preview-icon.png');
+    background-position: 0% 0px;
+    line-height: 28px;
+    background-repeat: no-repeat;
+    padding: 0 0 0 40px;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.executeart-screenshots-link:hover {
+    background-image: url('../images/preview-icon-hover.png');
+    background-position: 0% 0px;
+    line-height: 28px;
+    background-repeat: no-repeat;
+    padding: 0 0 0 40px;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: #ec842d;
+    text-transform: uppercase;
+}
+
+h1.news-flick{
+    font-size: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight:200;
+    text-align:center;
+    margin:0px;
+    padding:0px;
+ }
+
+.executeart-screenshots-panel-content {
+    margin: 30px 20px 30px 20px;
+    overflow: hidden;
+    position: relative;
+}
+.screenshots-list-container {
+    margin: 0 0 -20px;
+    overflow: hidden;
+}
+ul.screenshots-list {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-top: -20px;
+    position: relative;
+    top: 20px;
+}
+.executeart-pull-left {
+    float: left;
+}
+#executeart-panel ul.screenshots-list {
+    font-size: 14px;
+}
+ul.screenshots-list li {
+    width: 80px;
+    float: left;
+    margin: 0 20px 20px 0;
+    list-style: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    justify-content: center;
+}
+ul.screenshots-list li a {
+    background-color: #ec842d;
+    border-radius: 6px;
+    color: #fff !important;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    height: 80px;
+    line-height: 110% !important;
+    padding: 8px 2px 2px 2px;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none
+}
+.screenshot-icon {
+    width: 32px;
+    height: 32px;
+    background-position: 0;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto 5px auto;
+}
+.screenshot-apple {
+    background-image: url('../images/email-clients/apple.png');
+}
+.screenshot-android {
+    background-image: url('../images/email-clients/android.png');
+}
+.screenshot-aol {
+    background-image: url('../images/email-clients/aol.png');
+}
+.screenshot-gmail {
+    background-image: url('../images/email-clients/gmail.png');
+}
+.screenshot-gmx {
+    background-image: url('../images/email-clients/gmx.png');
+}
+.screenshot-lotus {
+    background-image: url('../images/email-clients/lotus.png');
+}
+.screenshot-office365 {
+    background-image: url('../images/email-clients/office365.png');
+}
+.screenshot-outlook {
+    background-image: url('../images/email-clients/outlook.png');
+}
+.screenshot-outlookold {
+    background-image: url('../images/email-clients/outlookold.png');
+}
+.screenshot-thunderbird {
+    background-image: url('../images/email-clients/thunderbird.png');
+}
+.screenshot-webde {
+    background-image: url('../images/email-clients/webde.png');
+}
+.screenshot-yahoo {
+    background-image: url('../images/email-clients/yahoo.png');
+}
+.screenshot-mail {
+    background-image: url('../images/email-clients/mail.png');
+}
+ul.screenshots-list li a:hover, ul.screenshots-list li a.selected {
+    color: #fff !important;
+    background-color: #2C2C2C;
+}
+.screenshots-container {
+    padding: 0px;
+    text-align: center;
+}
+.screenshots-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.loading-screenshot {
+    background-image: url('../images/loading.gif');
+    background-position: 20% 20%;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 340px;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.vertical-track, .vertical-handle {
+    transition: background .20s linear;
+    -webkit-transition: background .20s linear;
+    -moz-transition: background .20s linear;
+    -o-transition: background .20s linear;
+}
+.vertical-track {
+    width: 6px;
+    background-color: transparent;
+    border-radius: 1px;
+    margin-right: 5px !important;
+}
+.vertical-handle {
+    width: 6px;
+    background-color: #96abc1;
+    background-color: rgba(150, 171, 193, 0.3);
+    border-radius: 1px;
+}
+.vertical-handle:hover, .dragging .vertical-handle, .vertical-handle:active, .vertical-track:hover .vertical-handle {
+    background-color: #96abc1;
+}
+.vertical-track:hover, .vertical-track:active, .vertical-track.dragging {
+    background-color: #eee;
+}
+.vertical-handle:focus {
+    outline: none;
+}
+.custom-scroll {
+    width: 100% !important;
+    position: relative;
+}
+.ps-scrollbar-y {
+    cursor: pointer;
+}
+.screenshots-container img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+    -webkit-touch-callout: none;
+    transition: all 1s linear;
+}
+/*scroll*/
+.ps-container {
+    -ms-touch-action: auto;
+    touch-action: auto;
+    overflow: hidden !important;
+    -ms-overflow-style: none;
+}
+@supports (-ms-overflow-style: none) {
+ .ps-container {
+ overflow: auto !important;
+}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.ps-container {
+    overflow: auto !important;
+}
+}
+.ps-container.ps-active-y > .ps-scrollbar-y-rail {
+    display: block;
+    background-color: transparent;
+}
+.ps-container.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail {
+    background-color: #2c2c2c;
+    opacity: 0.9;
+}
+.ps-container.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+    background-color: #ec842d;
+}
+.ps-container > .ps-scrollbar-y-rail {
+    position: absolute;
+    border-radius: 4px;
+    opacity: 1;
+    -webkit-transition: background-color .2s linear, opacity .2s linear;
+    -o-transition: background-color .2s linear, opacity .2s linear;
+    -moz-transition: background-color .2s linear, opacity .2s linear;
+    transition: background-color .2s linear, opacity .2s linear;
+    right: 0;
+    width: 6px;
+}
+.ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+    position: absolute;
+    background-color: #ec842d;
+    background-color: rgba(236, 132, 45, 0.9);
+    border-radius: 4px;
+    -webkit-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
+    transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
+    -o-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+    -moz-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
+    transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+    transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -webkit-border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
+    right: 0px;
+    width: 6px;
+}
+.ps-container:hover.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail {
+    background-color: #2c2c2c;
+    opacity: 1;
+}
+.ps-container:hover.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+    background-color: #ec842d;
+}
+.ps-container:hover > .ps-scrollbar-y-rail {
+    opacity: 1;
+}
+.ps-container:hover > .ps-scrollbar-y-rail:hover {
+    background-color: #2c2c2c;
+    opacity: 1;
+}
+.ps-container:hover > .ps-scrollbar-y-rail:hover > .ps-scrollbar-y {
+    background-color: #ec842d;
+}
+noscript {
+    text-align: center;
+    margin: 40px auto;
+    display: block;
+    font-size: 18px;
+    width: 80%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 3px;
+    line-height: 150%;
+    border: 1px solid #ccc;
+}
+
+/*/scroll*/
+@media(max-width:980px) {
+body {
+    padding-left: 0 !important;
+}
+body.screenshots-page {
+    padding-left: 340px !important;
+}
+#executeart-panel {
+    display: none;
+}
+#executeart-panel.screenshots-panel {
+    display: block;
+}
+}
+
+@media(max-width:800px) {
+body.screenshots-page {
+    padding-left: 0 !important;
+}
+#executeart-panel.screenshots-panel {
+    width: 100%;
+    box-shadow: none;
+    height: auto;
+    position: relative;
+    border: 0;
+}
+.executeart-screenshots-panel-content {
+    margin: 15px 10px 0px 30px;
+}
+.custom-scroll {
+    height: 280px;
+    width: 100% !important;
+}
+.executeart-purchase {
+    position: relative;
+}
+ul.screenshots-list li:nth-child(3n+3) {
+    margin-right: 20px !important;
+}
+ul.screenshots-list {
+    margin-right: 10px;
+}
+.vertical-track {
+    margin-right: 0 !important;
+    right: 10px !important;
+    margin-left: -10px !important;
+}
+.screenshots-container {
+    padding: 0;
+    text-align: center;
+}
+}
+
+@media(max-width:480px) {
+.executeart-btn {
+    padding: 15px 10px 17px 10px;
+}
+ul.screenshots-list li {
+    width: 68px!important;
+}
+}
+
+@media only screen and (max-width:580px) {
+#tablet_view {
+    display: none
+}
+#desktop_view {
+    display: none
+}
+.loading-screenshot {
+    background-image: url('../images/loading.gif');
+    background-repeat: no-repeat;
+    left:0px!important;
+    right:0px!important;
+    position: fixed;
+    top:60px!important;
+    text-align:center!important;
+    background-position:center!important;
+}
+
+}
+.executeart-panel-title i {
+    color: #bcbcbc;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px;
+}
+.executeart-panel-title i:hover {
+    color: #e3e3e3;
+}
+.executeart-panel-title i.active {
+    color: #fff;
+}
+.executeart-panel-title i.fa-tablet {
+    font-size: 20px;
+}
+.executeart-panel-title i.fa-mobile {
+    font-size: 22px;
+}
+#iframe-area {
+    width: 100%;
+    height: 98vh;
+    text-align: center;
+}
+#iframe-area iframe {
+    width: 100%;
+    height: 100%;
+}
+.display-none {
+    display: none;
+}
+.display-show {
+    display: block;
+}
+
+a.executeart-btn-1{font-family: 'Montserrat', sans-serif; padding:10px 10px; background:#ec842d; color:#12151d; font-size:15px; font-weight:600; text-decoration:none; border-radius:5px; margin-right:20px;}
+a.executeart-btn-2{font-family: 'Montserrat', sans-serif; padding:10px 10px; background:#ffffff; color:#000; font-size:15px; font-weight:600; text-decoration:none; border-radius:5px;}
+
+.content-area{ padding:0px 30px 0px 0px;}
+.content-area p{padding:0px!important; display:block; font-size:14px; line-height:18px;}
+.content-area p.bold-line{ font-weight:bold; padding:0px!important; margin-bottom:5px!important;}
+.content-area .content-list ul{ margin:0px!important; padding:0px!important; font-size:14px;}
+.content-area .content-list li{ margin-bottom:10px; list-style-type:square; font-size:14px;}
+
+img.lazy {
+    display: block;
+    background-image: url('../images/loading.gif');
+    background-repeat: no-repeat;
+    background-position:0% 0%;
+}

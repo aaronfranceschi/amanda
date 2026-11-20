@@ -1,0 +1,759 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,300italic,300,900italic' rel='stylesheet' type='text/css'>
+<title>Kitchen Xchange</title>
+<script language="javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+    
+    //Disable F12 Key
+    $(document).keydown(function(event){
+    if(event.keyCode==123){
+        return false;
+    }
+        else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+             return false;
+    }
+    });
+
+    $(document).on("contextmenu",function(e){        
+       e.preventDefault();
+    });
+    
+    //Disable print Key
+    $(window).keyup(function(e){
+      if(e.keyCode == 44){
+        $("body").hide();
+      }
+    });
+    
+});
+</script>
+
+<style type="text/css">
+body {
+    margin: 0;
+    padding: 0;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+table {
+    border-spacing: 0;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+table td {
+    border-collapse: collapse;
+}
+img {
+    -ms-interpolation-mode: bicubic;
+    display: block;
+}
+/*outlook*/
+.ExternalClass {
+    width: 100%;
+}
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%;
+}
+.ReadMsgBody {
+    width: 100%;
+    background-color: #333333;
+}
+/*anchors*/
+.yshortcuts a {
+    border-bottom: none!important;
+}
+.ios-footer a {
+    color: #aaaaaa!important;
+    text-decoration: underline;
+}
+table p, table h1, table h2, table h3, table h4 {
+    margin-top: 0!important;
+    margin-right: 0!important;
+    margin-bottom: 0!important;
+    margin-left: 0!important;
+    padding-top: 0!important;
+    padding-right: 0!important;
+    padding-bottom: 0!important;
+    padding-left: 0!important;
+}
+
+/*Responsive*/
+@media screen and (max-width: 799px) {
+table.force-row {
+    width: 600px!important;
+    max-width: 600px!important;
+}
+}
+
+@media screen and (max-width: 599px) {
+table.force-row {
+    width: 480px!important;
+    max-width: 480px!important;
+}
+table.mobile-row, td.mobile-row {
+    width: 480px!important;
+    max-width: 480px!important;
+}
+table.center-float {
+    float: none!important;
+}
+td.col {
+    width: 100%!important;
+}
+td.col.center-text {
+    text-align: center!important;
+    padding-left: 12px!important;
+    padding-right: 12px!important;
+}
+td.container-padding {
+    padding-left: 12px!important;
+    padding-right: 12px!important;
+}
+img.image {
+    width: 100%!important;
+    max-width: 100%!important;
+    height: auto!important;
+    margin: auto;
+}
+td.gallery-container img {
+    padding-bottom: 10px!important;
+}
+table.hide-mobile, tr.hide-mobile, td.hide-mobile {
+    display: none!important;
+}
+td.mobile-gap {
+    height: 25px!important;
+    width: 100%!important;
+}
+}
+
+@media screen and (max-width: 479px) {
+table.force-row {
+    width: 100%!important;
+    max-width: 100%!important;
+}
+table.mobile-row, td.mobile-row {
+    width: 100%!important;
+    max-width: 100%!important;
+}
+table.mobile-row.padding10 {
+    width: 100%!important;
+    max-width: 100%!important;
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+}
+table.mobile-row.padding20 {
+    width: 100%!important;
+    max-width: 100%!important;
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
+}
+td.clients img {
+    width: 75%!important;
+    height: auto!important;
+}
+</style>
+</head>
+
+<body style="margin:0; padding:0;" bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+    <tr>
+        <td align="center" valign="top" bgcolor="#ffffff">
+            <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table border="0" width="600" cellpadding="0" cellspacing="0" bgcolor="#ffffff" class="force-row" style="width:600px;max-width:600px;">
+                                <tr>
+                                    <td class="container-padding" align="center" width="100%">
+                                        <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="force-row" style="width: 600px;max-width:600px;">
+                                            <tr>
+                                                <td class="col" valign="middle" align="center" height="30" style="font-size:30px;line-height:30px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                        <table width="100" border="0" cellpadding="0" cellspacing="0" align="left" class="mobile-row padding10" style="width: 100px;max-width:100px;">
+                                            <tr>
+                                                <td mc:edit="m1" class="col center-text" valign="middle">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="104" border="0" cellpadding="0" cellspacing="0" align="right" class="mobile-row" style="width:104px; max-width:104px;">
+                                            <tr>
+                                                <td valign="middle" align="center" width="20" height="20" style="font-size:20px;line-height:20px;"><a href="#"><img style="display:block;" src="images/facebook.jpg" width="28" height="28" border="0" mc:edit="m2" editable="true" label="Facebook" alt="Facebook"></a></td>
+                                                <td valign="middle" align="center" width="20" height="20" style="font-size:20px;line-height:20px;"><a href="#"><img style="display:block;" src="images/google-plus.jpg" width="28" height="28" border="0" mc:edit="m3" editable="true" label="Facebook" alt="Google"></a></td>
+                                                <td valign="middle" align="center" width="20" height="20" style="font-size:20px;line-height:20px;"><a href="#"><img style="display:block;" src="images/pinterest.jpg" width="28" height="28" border="0" mc:edit="m4" editable="true" label="Facebook" alt="Instagram "></a></td>
+                                            </tr>
+                                        </table>
+                                        <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="force-row" style="width: 600px; max-width:600px;">
+                                            <tr>
+                                                <td class="col" valign="middle" align="center" height="2" style="font-size:2px; line-height:2px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                
+            <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center" valign="top">
+                        <table border="0" width="800" cellpadding="0" cellspacing="0" bgcolor="#ffffff" class="force-row" style="width:600px;max-width:600px;">
+                            <tr>
+                                <td class="container-padding" align="center" width="100%">
+                                    <table border="0" cellpadding="0" cellspacing="0" align="left" class="mobile-row">
+                                        <tr>
+                                            <td height="30"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col" align="center" valign="bottom">
+                                                <a href="http://www.kitchenxchange.com.au/" target="_blank">    
+                                                    <img style="display:block;" border="0" width="160" height="72" src="images/logo.jpg" mc:edit="m8" title="kitchen xchange" alt="kitchen xchange">
+                                                </a>
+                                             </td>
+                                        </tr>
+                                    </table>
+                                    <table border="0" cellpadding="0" cellspacing="0" align="right" class="mobile-row">
+                                        <tr>
+                                            <td class="hide-mobile" valign="middle" align="center" height="48" style="font-size:48px;line-height:48px;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col" valign="middle" align="center">
+                                                <table border="0" cellpadding="0" cellspacing="0" align="right" class="mobile-row padding20">
+                                                    <tr>
+                                                        <td valign="middle" align="center">
+                                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                                <tr>
+                                                                    <td align="center">
+                                                                       <img style="display:block;" src="images/about-icon.png" mc:edit="about-us" border="0" width="39" height="33">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="10"></td>
+                                                                </tr>
+                                                                 <tr>
+                                                                    <td style="text-align:center; text-transform:uppercase; color:#666666; font-size:14px; font-family: 'Lato', Arial, sans-serif;">
+                                                                        <a href="http://www.kitchenxchange.com.au/about" target="_blank" style="text-decoration:none; color:#666666;">About us</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td valign="middle" align="center" width="20" style="max-width:20px;">&nbsp;
+                                                            
+                                                        </td>
+                                                        <td valign="middle" align="center">
+                                                           <table border="0" cellpadding="0" cellspacing="0">
+                                                                <tr>
+                                                                    <td align="center">
+                                                                       <img style="display:block;" src="images/delivery-icon.png" mc:edit="dlivery" border="0" width="48" height="33" >
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="10"></td>
+                                                                </tr>
+                                                                 <tr>
+                                                                    <td style="text-align:center; text-transform:uppercase; color:#666666; font-size:14px; font-family: 'Lato', Arial, sans-serif;">
+                                                                        <a href="http://www.kitchenxchange.com.au/returns-and-refunds/" target="_blank" style="text-decoration:none; color:#666666;">Delivery</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td valign="middle" align="center" width="20" style="max-width:20px;">&nbsp;
+                                                            
+                                                        </td>
+                                                        <td valign="middle" align="center">
+                                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                                <tr>
+                                                                    <td align="center">
+                                                                       <img style="display:block;" src="images/contact-us-icon.png" mc:edit="contact-us" border="0"  width="30" height="33">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="10"></td>
+                                                                </tr>
+                                                                 <tr>
+                                                                    <td style="text-align:center; text-transform:uppercase; color:#666666; font-size:14px; font-family: 'Lato', Arial, sans-serif;">
+                                                                        <a href="http://www.kitchenxchange.com.au/contact" target="_blank" style="text-decoration:none; color:#666666;">Contact us</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td valign="middle" align="center" width="20" style="max-width:20px;">&nbsp;
+                                                            
+                                                        </td>
+                                                        <td valign="middle" align="center">
+                                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                                <tr>
+                                                                    <td align="center">
+                                                                       <img style="display:block;" src="images/blog-icon.png" mc:edit="blog-post" border="0"  width="35" height="33">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="10"></td>
+                                                                </tr>
+                                                                 <tr>
+                                                                    <td style="text-align:center; text-transform:uppercase; color:#666666; font-size:14px; font-family: 'Lato', Arial, sans-serif;">
+                                                                        <a href="http://www.kitchenxchange.com.au/blog/" target="_blank" style="text-decoration:none; color:#666666;">Blog Post</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                    </table>
+                    </td>
+                </tr>
+                <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="force-row" style="width: 600px; max-width:600px;">
+                    <tr>
+                        <td class="col" valign="middle" align="center" height="25" style="font-size:25px; line-height:25px;">&nbsp;</td>
+                    </tr>
+                </table>
+            </table>
+            
+            
+            <table border="0" width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table bgcolor="#282828" width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="force-row" style="width: 600px;max-width:600px;">
+                                <tr>
+                                    <td class="col" valign="middle" align="center" height="5" style="font-size:5px;line-height:5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                   <td  mc:edit="exclusive-members" class="col" valign="middle" align="center" height="55" style="font-size:33px; color:#fff; font-weight:400; font-style:italic; font-family: 'Lato', sans-serif;">
+                                        Exclusive members only deals
+                                   </td>
+                                </tr>
+                                <tr>
+                                    <td class="col" valign="middle" align="center" height="5" style="font-size:5px;line-height:5px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                
+            
+            <table border="0" width="100%" cellpadding="0" cellspacing="0" style="background: url(images/tableware-bg.jpg) no-repeat center top; background-color:#000000; background-size:cover;" height="100%">
+                <tr>
+                    <td class="col" valign="top" align="center">
+                        <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="center" valign="top" height="50" style="background-color:#ffffff"></td>
+                                <td rowspan="2" align="center" valign="top" width="600" class="mobile-row">
+                                    <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-row" style="width:600px; max-width:600px;">
+                                        <tr>
+                                            <td class="col" valign="middle" align="center"><img class="image" style="display:block;" src="images/header-banner.jpg" mc:edit="newsletter-offer" border="0" width="600" height="400" editable="true" title="Welcome Code SUBS2987" alt="Welcome Code SUBS2987"></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" valign="top" height="18"></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" valign="top"><img class="image" style="display:block;" src="images/hurry-offer.jpg" mc:edit="hurry-offer" border="0" width="600" height="93" editable="true" title="Hurry, offer expires in 1 week" alt="Hurry, offer expires in 1 week"></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" valign="top" height="20"></td>
+                                        </tr>
+                                         <tr>
+                                            <td align="center" valign="top" height="54"><a href="http://www.kitchenxchange.com.au" target="_blank" style="text-decoration:none; color:#666666;"><img class="image" style="display:block;" src="images/oder-now.jpg" mc:edit="oder-now" border="0" width="250" height="54" editable="true" title="Order Now" alt="Order Now"></a></td>
+                                        </tr>
+                                         <tr>
+                                            <td align="center" valign="top" height="20"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="center" valign="top" height="50" style="background-color:#ffffff"></td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top" style="background-color:#" data-bgcolor="Back Color Left">&nbsp;</td>
+                                <td align="center" valign="top" style="background-color:#" data-bgcolor="Back Color Right">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            
+            
+                <table border="0" width="100%" cellpadding="0" cellspacing="0" style="background-color: #282828;">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="force-row" style="width: 600px;max-width:600px;">
+                                <tr>
+                                    <td class="col" valign="middle" align="center" height="8" style="font-size:8px;line-height:8px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td mc:edit="mcoupon" class="col center-text" valign="middle" align="center" style="line-height:24px;">
+                                        <div style="line-height:24px;">
+                                            <multiline>
+                                                <span style="display:inline-block; font-family:Arial,Helvetica,sans-serif;font-size:11px; color:#a1bb5b;">
+                                                    Coupon valid one per customer on orders over $80. Cannot be used in conjunction with any other offer.
+                                                </span>
+                                            </multiline>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col" valign="middle" align="center" height="8" style="font-size:8px;line-height:8px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+         
+                
+            <repeater>
+                <layout label="Features">
+                    <table border="0" width="100%" cellpadding="0" cellspacing="0" style="background: #ffffff;" mc:repeatable="psd2newsletters" mc:variant="Features" data-module="Features" >
+                        <tr>
+                            <td align="center" valign="top">
+                                <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-row" style="width: 600px; max-width:600px;">
+                                    <tr>
+                                        <td class="col" valign="middle" align="center" height="40" style="font-size:40px;line-height:40px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="container-padding" valign="middle" align="center">
+                                            <table width="200" border="0" cellpadding="0" cellspacing="0" align="left" class="mobile-row" style="width: 200px;max-width:200px;">
+                                                <tr>
+                                                    <td class="col" valign="middle" align="center"><img class="image" style="display:block;" width="200" height="200" src="images/kitchenware.jpg" border="0" mc:edit="m34" editable="true" data-crop="false" label="Kitchenware" alt="Kitchenware" title="Kitchenware"></td>
+                                                </tr>
+                                            </table>
+                                            <table width="2" border="0" cellpadding="0" cellspacing="0" align="left" class="mobile-row" style="width: 2px;max-width:2px;">
+                                                <tr>
+                                                    <td class="col" valign="middle" align="center" height="25" style="font-size:25px;line-height:25px;">&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                            <table width="360" border="0" cellpadding="0" cellspacing="0" align="right" class="mobile-row" style="width: 360px;max-width:360px;">
+                                                <tr>
+                                                    <td mc:edit="m35" class="col center-text" valign="middle" align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:normal;line-height:21px;color:#666666;">
+                                                        <div style="line-height:24px;">
+                                                            <multiline> <span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:normal;line-height:21px;color:#666666; text-transform:uppercase;" data-color="Title-1">Kitchenware</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col" valign="middle" align="left" height="25" style="font-size:25px;line-height:25px;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td mc:edit="m37" class="col center-text" valign="middle" align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:normal;line-height:21px;color:#666666;letter-spacing:-0.2px;">
+                                                    
+                                                        <div style="line-height:21px;">
+                                                            <multiline>Gadgets, Gadgets, Gadgets – you name it, we have it! Mundane kitchen tasks have never been easier with our massive range of kitchen tools. Whether you’re looking for a peeler or pasta machine, we have you covered.</multiline>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col" valign="middle" align="left" height="20" style="font-size:20px;line-height:20px;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col" valign="middle" align="center"><!-- btn -->
+                                                        
+                                                        <table width="120" border="0" cellpadding="0" cellspacing="0" align="left" class="center-float" style="width:120px;max-width:120px;">
+                                                            <tr>
+                                                                <td mc:edit="m38" valign="middle" align="center" width="120" height="40" style="border:1px solid #999999;">
+                                                                    <a href="http://www.kitchenxchange.com.au/kitchenware/" target="_blank" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:normal;line-height:12px;color:#769932;text-decoration:none;">
+                                                                    <singleline>SHOW MORE</singleline>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </table></td>
+                                                </tr>
+                                            </table>
+                                         </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col" valign="middle" align="center" height="80" style="font-size:80px;line-height:80px;"><!-- line -->
+                                            <table width="100" border="0" cellpadding="0" cellspacing="0" align="center" style="width:100px;max-width:100px;">
+                                                <tr>
+                                                    <td class="col" valign="middle" align="center" height="5" style="font-size:5px;line-height:5px;background:#e3e3e3;">&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="container-padding" valign="middle" align="center">
+                                            <table width="200" border="0" cellpadding="0" cellspacing="0" align="right" class="mobile-row" style="width: 200px;max-width:200px;">
+                                                <tr>
+                                                    <td class="col" valign="middle" align="center"><img editable="true" mc:edit="m39C" class="image" style="display:block;" border="0" width="200" height="200" src="images/cookware.jpg" alt="Cookware" title="Cookware"></td>
+                                                </tr>
+                                            </table>
+                                            <table width="2" border="0" cellpadding="0" cellspacing="0" align="right" class="mobile-row" style="width: 2px;max-width:2px;">
+                                                <tr>
+                                                    <td class="col" valign="middle" align="center" height="25" style="font-size:25px;line-height:25px;">&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                            <table width="360" border="0" cellpadding="0" cellspacing="0" align="left" class="mobile-row" style="width: 360px;max-width:360px;">
+                                                <tr>
+                                                    <td mc:edit="m39b" class="col center-text" valign="middle" align="left" style="line-height:21px;">
+                                                        <div style="line-height:21px;">
+                                                            <multiline><span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:normal;line-height:21px;color:#666666; text-transform:uppercase;" data-color="Title-1">Cookware</span> </multiline>
+                                                        </div></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td class="col" valign="middle" align="left" height="25" style="font-size:25px;line-height:25px;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td mc:edit="m41" class="col center-text" valign="middle" align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:normal;line-height:21px;color:#666666;letter-spacing:-0.2px;">
+                                                        <div style="line-height:21px;">
+                                                            <multiline>Cooking is so much easier when you have a reliable set of cookware to use. You need high-quality cookware that is durable while still maintaining style, and that is exactly what we have on our site.</multiline>
+                                                        </div>
+                                                     </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col" valign="middle" align="left" height="20" style="font-size:20px;line-height:20px;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col" valign="middle" align="center"><table width="120" border="0" cellpadding="0" cellspacing="0" align="left" class="center-float" style="width:120px;max-width:120px;">
+                                                            <tr>
+                                                                <td mc:edit="m42" valign="middle" align="center" width="120" height="40" style="border:1px solid #999999;">
+                                                                    <a href="http://www.kitchenxchange.com.au/cookware/" target="_blank" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:normal;line-height:12px;color:#769932;text-decoration:none;">
+                                                                    <singleline> SHOW MORE </singleline>
+                                                                    </a>
+                                                                 </td>
+                                                            </tr>
+                                                        </table></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col" valign="middle" align="center" height="80" style="font-size:80px;line-height:80px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="container-padding" valign="middle" align="center">
+                                            <table width="200" border="0" cellpadding="0" cellspacing="0" align="left" class="mobile-row" style="width: 200px;max-width:200px;">
+                                                <tr>
+                                                    <td class="col" valign="middle" align="center"><img class="image" style="display:block;" width="200" height="200" src="images/tableware-&-knives.jpg" border="0" mc:edit="m34" editable="true" data-crop="false" label="Tableware & Knives" alt="Tableware & Knives" title="Tableware & Knives"></td>
+                                                </tr>
+                                            </table>
+                                            <table width="2" border="0" cellpadding="0" cellspacing="0" align="left" class="mobile-row" style="width: 2px;max-width:2px;">
+                                                <tr>
+                                                    <td class="col" valign="middle" align="center" height="25" style="font-size:25px;line-height:25px;">&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                            <table width="360" border="0" cellpadding="0" cellspacing="0" align="right" class="mobile-row" style="width: 360px;max-width:360px;">
+                                                <tr>
+                                                    <td mc:edit="tableware-heading" class="col center-text" valign="middle" align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:normal;line-height:21px;color:#666666;">
+                                                        <div style="line-height:24px;">
+                                                            <multiline> <span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:normal;line-height:21px;color:#666666; text-transform:uppercase;" data-color="Title-1">Tableware & Knives</span> </multiline>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col" valign="middle" align="left" height="25" style="font-size:25px;line-height:25px;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td mc:edit="tableware-content" class="col center-text" valign="middle" align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:normal;line-height:21px;color:#666666;letter-spacing:-0.2px;">
+                                                        <div style="line-height:21px;">
+                                                            <multiline> Prepare an elegant table setting with our beautiful range of tableware and accessories. We offer a large range of quality plates, mugs, cups and accessories at affordable prices. Why not stand out at your next dinner party?</multiline>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col" valign="middle" align="left" height="20" style="font-size:20px;line-height:20px;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col" valign="middle" align="center"><!-- btn -->
+                                                        
+                                                        <table width="120" border="0" cellpadding="0" cellspacing="0" align="left" class="center-float" style="width:120px;max-width:120px;">
+                                                            <tr>
+                                                                <td mc:edit="tableware-button" valign="middle" align="center" width="120" height="40" style="border:1px solid #999999;">
+                                                                    <a href="http://www.kitchenxchange.com.au/tableware/" target="_blank" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:normal;line-height:12px;color:#769932;text-decoration:none;">
+                                                                    <singleline>SHOW MORE</singleline>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                         </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col" valign="middle" align="center" height="40" style="font-size:40px;line-height:40px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                             </td>
+                        </tr>
+                    </table>
+                </layout>
+                <layout label="Clients">
+                    <table border="0" width="100%" cellpadding="0" cellspacing="0" style="background-color: #e3e3e3;" mc:repeatable="psd2newsletters" mc:variant="Clients" data-module="Clients" data-thumb="thumbnails/thumb-25.jpg">
+                        <tr>
+                            <td align="center" valign="top"><table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="force-row" style="width: 600px;max-width:600px;">
+                                    <tr>
+                                        <td class="col" valign="middle" align="center" height="45" style="font-size:45px;line-height:45px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td mc:edit="m162" class="col center-text" valign="middle" align="center" style="line-height:24px;">
+                                            <div style="line-height:24px;">
+                                                <multiline> <span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:bold;line-height:24px;color:#666666; text-transform:uppercase;" data-color="Title-1">popular</span> <span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:bold;line-height:24px;color:#9bb751; text-transform:uppercase;" data-color="Title-2">brands</span> </multiline>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col" valign="middle" align="center" height="30" style="font-size:30px;line-height:30px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clients" valign="middle" align="center"><table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-row" style="width: 600px;max-width:600px;">
+                                                <tr>
+                                                    <td valign="middle" align="center"><img style="display:block;" width="90" src="images/gordon-ramsay.jpg" border="0" mc:edit="m163" editable="true" data-crop="false" label="Logo-1" alt="Logo-1"></td>
+                                                    <td valign="middle" align="center"><img style="display:block;" width="90" src="images/company-brands.jpg" border="0" mc:edit="m164" editable="true" data-crop="false" label="Logo-2" alt="Logo-2"></td>
+                                                    <td valign="middle" align="center"><img style="display:block;" width="90" src="images/company-brands2.jpg" border="0" mc:edit="m165" editable="true" data-crop="false" label="Logo-3" alt="Logo-3"></td>
+                                                    <td valign="middle" align="center"><img style="display:block;" width="90" src="images/company-brands3.jpg" border="0" mc:edit="m166" editable="true" data-crop="false" label="Logo-4" alt="Logo-4"></td>
+                                                    <td valign="middle" align="center"><img style="display:block;" width="140" src="images/company-brands4.jpg" border="0" mc:edit="m167" editable="true" data-crop="false" label="Logo-4" alt="Logo-4"></td>
+                                                </tr>
+                                            </table></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col" valign="middle" align="center" height="30" style="font-size:30px;line-height:30px;">&nbsp;</td>
+                                    </tr>
+                                </table></td>
+                        </tr>
+                    </table>
+                </layout>
+                <layout label="Contact">
+                    `
+                    <table border="0" width="100%" cellpadding="0" cellspacing="0" style="background: #ffffff;" mc:repeatable="psd2newsletters" mc:variant="Contact" data-module="Contact" data-thumb="thumbnails/thumb-28.jpg">
+                        <tr>
+                            <td class="col" valign="middle" align="center" height="40" style="font-size:40px;line-height:40px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="container-padding" align="center" valign="top">
+                                <table width="592" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-row" style="width: 592px;max-width:592px; border:4px dashed #e3e3e3;">
+                                    <tr>
+                                        <td class="col" valign="middle" align="center" height="40" style="font-size:40px;line-height:40px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td mc:edit="m177" class="col center-text" valign="middle" align="center" style="line-height:24px;">
+                                            <div style="line-height:24px;">
+                                                <multiline> <span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:bold;line-height:24px;color:#666666;" data-color="Title-1">CONTACT</span> <span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:bold;line-height:24px;color:#9bb751;" data-color="Title-2">US</span> </multiline>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col" valign="middle" align="center" height="25" style="font-size:25px;line-height:25px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col" valign="middle" align="center" height="2" style="font-size:2px;line-height:2px;"><!-- line -->
+                                            
+                                            <table width="200" border="0" cellpadding="0" cellspacing="0" align="center" style="width: 200px;max-width:200px;">
+                                                <tr>
+                                                    <td class="col" valign="middle" align="center" height="2" style="font-size:2px;line-height:2px;background:#9bb751;">&nbsp;</td>
+                                                </tr>
+                                            </table></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col" valign="middle" align="center" height="25" style="font-size:25px;line-height:25px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col" valign="top" align="center">
+                                            <table width="280" border="0" cellpadding="0" cellspacing="0" align="left" class="mobile-row" style="width: 280px; max-width:280px;">
+                                                <tr>
+                                                    <td class="col" valign="middle" align="center">
+                                                        <table width="280" border="0" cellpadding="0" cellspacing="0" align="left" class="mobile-row" style="width:280px; max-width:280px;">
+                                                            <tr>
+                                                                <td class="col" valign="middle" align="center" height="50"><img style="display:block;" width="30" height="40" src="images/location.png" border="0" mc:edit="m178" editable="true" data-crop="false" label="Location" alt="Location"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td mc:edit="m179" class="col" valign="middle" align="center" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:normal;line-height:18px;color:#666666;">
+                                                                    <div style="line-height:18px;">
+                                                                        <multiline>
+                                                                            Shop GR036 Rouse Hill Shopping<br>
+                                                                            Centre Cnr White Hart Dr & Windsor Rd,<br>
+                                                                            Rouse Hill NSW 2155<br>
+                                                                        </multiline>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table width="280" border="0" cellpadding="0" cellspacing="0" align="right" class="mobile-row" style="width: 280px; max-width:280px;">
+                                                <tr>
+                                                    <td class="col" valign="middle" align="center" height="50"><img style="display:block;" width="30" height="40" src="images/mobile.png" border="0" mc:edit="m182" editable="true" data-crop="false" label="Global" alt="Global"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td mc:edit="m183" class="col" valign="middle" align="center" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:normal;line-height:18px;color:#666666;">
+                                                        <div style="line-height:18px;">
+                                                            <multiline>
+                                                                <a href="mailto:sales@kitchenxchange.com.au" style="color:#666666;text-decoration:none;">sales@kitchenxchange.com.au</a><br>
+                                                                Telephone: (02) 8814 6016
+                                                            </multiline>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                         </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col" valign="middle" align="center" height="30" style="font-size:30px;line-height:30px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                        <tr>
+                            <td class="col" valign="middle" align="center" height="20" style="font-size:20px;line-height:20px;">&nbsp;</td>
+                        </tr>
+                    </table>
+                </layout>
+            </repeater>
+            <table border="0" width="100%" cellpadding="0" cellspacing="0" style="background:#fff;">
+                <tr>
+                    <td class="container-padding" align="center" valign="top">
+                        <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-row" style="width: 600px; max-width:600px;">
+                            <tr>
+                                <td class="col" valign="top" align="center">
+                                    <table width="290" border="0" cellpadding="0" cellspacing="0" align="left" class="mobile-row" style="width: 290px;max-width:290px;">
+                                        <tr>
+                                            <td class="col" valign="middle" align="center" height="20" style="font-size:20px;line-height:20px;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td mc:edit="m184" class="col center-text" valign="middle" align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:normal;line-height:18px;color:#666666;"><singleline>Copyright &copy; 2016. Kitchen Xchange.</singleline></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col" valign="middle" align="center" height="20" style="font-size:20px;line-height:20px;">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <table width="290" border="0" cellpadding="0" cellspacing="0" align="right" class="mobile-row" style="width: 290px;max-width:290px;">
+                                        <tr>
+                                            <td class="col" valign="middle" align="center" height="20" style="font-size:20px;line-height:20px;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td mc:edit="m185" class="col center-text" valign="middle" align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:normal;line-height:18px;color:#666666;">
+                                                <a href="#" style="color:#666666;text-decoration:none;">Unsubscribe</a> - 
+                                                <a href="#" style="color:#666666;text-decoration:none;">from this list</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col" valign="middle" align="center" height="20" style="font-size:20px;line-height:20px;">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+         </td>
+     </tr>
+</table>
+  
+</body>
+</html>
