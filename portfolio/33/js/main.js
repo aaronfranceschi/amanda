@@ -83,7 +83,7 @@ function mobile_view(ele)
 jQuery(document).ready(function($) {
     // Typing effect
     $("#typing").typed({
-        strings: ["Email development by Amanda", "at Amanda", "Email Design", "Email Code",  "Responsive Newsletter", "Landing Page", "PSD to HTML5","WEB BANNER DESIGNS", "BUSINESS CARD DESIGNS", "Website Design", "Logo Design", "Graphic Design",],
+        strings: ["Email development by Amanda", " ", "Email Design", "Email Code",  "Responsive Newsletter", "Landing Page", "PSD to HTML5","WEB BANNER DESIGNS", "BUSINESS CARD DESIGNS", "Website Design", "Logo Design", "Graphic Design",],
         typeSpeed: 0,
         backSpeed: 0,
         startDelay: 1500,
